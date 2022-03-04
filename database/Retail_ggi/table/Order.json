@@ -16,9 +16,6 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": false,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
@@ -36,8 +33,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 16,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -54,9 +49,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -73,9 +65,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -92,9 +81,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -112,9 +98,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -132,9 +115,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -152,9 +132,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -172,9 +149,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -192,9 +166,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -212,9 +183,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -232,9 +200,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -252,7 +217,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -271,7 +235,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -290,7 +253,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 8,
 						"Properties": {
@@ -309,7 +271,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -328,7 +289,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -347,7 +307,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -366,7 +325,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -385,7 +343,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -404,7 +361,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -423,7 +379,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -442,7 +397,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -461,9 +415,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -480,9 +431,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -500,9 +448,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -520,9 +465,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -540,9 +482,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -560,9 +499,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -580,9 +516,6 @@
 						"TypeName": "date",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"DateFormat": "YYYY-MM-DD",
 							"HIVE_TYPE_STRING": "date"
@@ -601,8 +534,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 128,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -619,9 +550,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -638,9 +566,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -657,9 +582,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -676,9 +598,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -696,8 +615,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 128,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -714,9 +631,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -734,8 +648,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 128,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -752,9 +664,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -771,7 +680,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 8,
 						"Properties": {
@@ -790,9 +698,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -809,7 +714,6 @@
 						"TypeName": "decimal",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
 						"Precision": 18,
 						"Scale": 2,
 						"Properties": {
@@ -828,9 +732,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -848,9 +749,6 @@
 						"TypeName": "timestamp",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
 							"HIVE_TYPE_STRING": "timestamp"
@@ -868,9 +766,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -887,9 +782,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -906,9 +798,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -925,9 +814,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -944,9 +830,6 @@
 						"TypeName": "boolean",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "boolean"
 						}
@@ -964,8 +847,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 2048,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -983,8 +864,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 1024,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1002,8 +881,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 2048,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1020,9 +897,6 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
@@ -1039,9 +913,6 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
@@ -1058,9 +929,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1077,9 +945,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1096,9 +961,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1116,8 +978,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 18,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1134,9 +994,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1147,15 +1004,12 @@
 					}
 				},
 				{
-					"Name": "AdvertisingEventId",
+					"Name": "AdvertisingId",
 					"Description": "The unique identifier of an Advertising Event.",
 					"OriginDataTypeName": {
 						"TypeName": "integer",
-						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
+						"IsComplexType": false,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1166,34 +1020,12 @@
 					}
 				},
 				{
-					"Name": "SalesMethodId",
-					"Description": "The unique identifier of a Sales Method.",
-					"OriginDataTypeName": {
-						"TypeName": "integer",
-						"IsComplexType": false,
-						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
-						"Properties": {
-							"HIVE_TYPE_STRING": "integer"
-						}
-					},
-					"BaseAttributeReference": {
-						"Entity": "Order.cdm.json/Order",
-						"Name": "SalesMethodId"
-					}
-				},
-				{
 					"Name": "PaymentMethodId",
 					"Description": "The unique identifier of a Payment Method.",
 					"OriginDataTypeName": {
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1210,9 +1042,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1229,9 +1058,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1248,9 +1074,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1267,9 +1090,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1286,9 +1106,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1305,9 +1122,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1324,9 +1138,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1343,9 +1154,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1363,8 +1171,6 @@
 						"IsComplexType": false,
 						"IsNullable": true,
 						"Length": 3,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "string"
 						}
@@ -1381,9 +1187,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1400,9 +1203,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1419,9 +1219,6 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
@@ -1438,9 +1235,6 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
@@ -1457,9 +1251,6 @@
 						"TypeName": "long",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "long"
 						}
@@ -1476,9 +1267,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1495,9 +1283,6 @@
 						"TypeName": "integer",
 						"IsComplexType": false,
 						"IsNullable": true,
-						"Length": 0,
-						"Precision": 0,
-						"Scale": 0,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -1517,8 +1302,8 @@
 				"Properties": {
 					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/Order",
 					"delimiter": ",",
-					"firstRowAsHeader": "false",
 					"multiLine": "false",
+					"firstRowAsHeader": "false",
 					"serialization.format": "1",
 					"escape": "\\",
 					"quote": "\"",
@@ -1537,7 +1322,7 @@
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
 				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
-				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderId\"},\"OrderConfirmationNumber\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationNumber\"},\"OrderEnteredByEmployeeId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEnteredByEmployeeId\"},\"NumberOfOrderLines\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"NumberOfOrderLines\"},\"OrderReceivedTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReceivedTimestamp\"},\"OrderEntryTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEntryTimestamp\"},\"CustomerCreditCheckTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckTimestamp\"},\"OrderConfirmationTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationTimestamp\"},\"OrderRequestedDeliveryDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderRequestedDeliveryDate\"},\"OrderCommittedDeliveryDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCommittedDeliveryDate\"},\"ShipmentConfirmationTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentConfirmationTimestamp\"},\"OrderActualDeliveryTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderActualDeliveryTimestamp\"},\"OrderTotalRetailPriceAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalRetailPriceAmount\"},\"OrderTotalActualSalesPriceAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalActualSalesPriceAmount\"},\"OrderTotalAdjustmentPercentage\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentPercentage\"},\"OrderTotalAdjustmentAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentAmount\"},\"OrderTotalAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAmount\"},\"TotalShippingChargeAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalShippingChargeAmount\"},\"OrderTotalTaxAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalTaxAmount\"},\"OrderTotalInvoicedAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalInvoicedAmount\"},\"TotalGratuityAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalGratuityAmount\"},\"TotalPaidAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalPaidAmount\"},\"TotalCommissionsPayableAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalCommissionsPayableAmount\"},\"SplitCommissionsIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SplitCommissionsIndicator\"},\"OrderBookedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBookedDate\"},\"OrderBilledDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBilledDate\"},\"OrderBacklogReportedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReportedDate\"},\"OrderBacklogReleasedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReleasedDate\"},\"OrderCancellationDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCancellationDate\"},\"OrderReturnedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReturnedDate\"},\"ShipmentToName\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToName\"},\"ShipmentToLocationId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToLocationId\"},\"ShipmentId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentId\"},\"CarrierId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CarrierId\"},\"ShipmentMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentMethodId\"},\"RequestedShipmentCarrierName\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RequestedShipmentCarrierName\"},\"AlternateCarrierAcceptableIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AlternateCarrierAcceptableIndicator\"},\"ActualShipmentCarrierName\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ActualShipmentCarrierName\"},\"ShipOrderCompleteIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipOrderCompleteIndicator\"},\"TotalOrderWeight\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderWeight\"},\"WeightUomId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WeightUomId\"},\"TotalOrderFreightChargeAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderFreightChargeAmount\"},\"EarliestDeliveryWindowTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"EarliestDeliveryWindowTimestamp\"},\"LatestDeliveryWindowTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"LatestDeliveryWindowTimestamp\"},\"AcknowledgementRequiredIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AcknowledgementRequiredIndicator\"},\"ExpediteOrderIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ExpediteOrderIndicator\"},\"DropShipmentIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DropShipmentIndicator\"},\"ServiceOrderIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ServiceOrderIndicator\"},\"ProductOrderIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ProductOrderIndicator\"},\"OrderDeliveryInstructions\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderDeliveryInstructions\"},\"CustomerCreditCheckNote\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckNote\"},\"MessageToCustomer\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MessageToCustomer\"},\"CustomerId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerId\"},\"CustomerAccountId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerAccountId\"},\"WarehouseId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WarehouseId\"},\"StoreId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"StoreId\"},\"CustomerIdentificationMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerIdentificationMethodId\"},\"PoNumber\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PoNumber\"},\"MarketingEventId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MarketingEventId\"},\"AdvertisingEventId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AdvertisingEventId\"},\"SalesMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SalesMethodId\"},\"PaymentMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PaymentMethodId\"},\"BillingCycleId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"BillingCycleId\"},\"ContractId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ContractId\"},\"SalesChannelId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SalesChannelId\"},\"DistributionChannelId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DistributionChannelId\"},\"OrderTypeId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTypeId\"},\"OrderClassificationId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderClassificationId\"},\"RejectionReasonId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RejectionReasonId\"},\"OrderProcessingStatusId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderProcessingStatusId\"},\"IsoCurrencyCode\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"IsoCurrencyCode\"},\"PointOfSaleId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PointOfSaleId\"},\"ResponsibilityCenterId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ResponsibilityCenterId\"},\"VendorId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"VendorId\"},\"DeviceId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DeviceId\"},\"SoftwareProductId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductId\"},\"SoftwareProductVersionNumber\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductVersionNumber\"},\"PromotionOfferId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PromotionOfferId\"}}}"
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderId\"},\"OrderConfirmationNumber\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationNumber\"},\"OrderEnteredByEmployeeId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEnteredByEmployeeId\"},\"NumberOfOrderLines\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"NumberOfOrderLines\"},\"OrderReceivedTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReceivedTimestamp\"},\"OrderEntryTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEntryTimestamp\"},\"CustomerCreditCheckTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckTimestamp\"},\"OrderConfirmationTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationTimestamp\"},\"OrderRequestedDeliveryDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderRequestedDeliveryDate\"},\"OrderCommittedDeliveryDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCommittedDeliveryDate\"},\"ShipmentConfirmationTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentConfirmationTimestamp\"},\"OrderActualDeliveryTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderActualDeliveryTimestamp\"},\"OrderTotalRetailPriceAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalRetailPriceAmount\"},\"OrderTotalActualSalesPriceAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalActualSalesPriceAmount\"},\"OrderTotalAdjustmentPercentage\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentPercentage\"},\"OrderTotalAdjustmentAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentAmount\"},\"OrderTotalAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAmount\"},\"TotalShippingChargeAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalShippingChargeAmount\"},\"OrderTotalTaxAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalTaxAmount\"},\"OrderTotalInvoicedAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalInvoicedAmount\"},\"TotalGratuityAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalGratuityAmount\"},\"TotalPaidAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalPaidAmount\"},\"TotalCommissionsPayableAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalCommissionsPayableAmount\"},\"SplitCommissionsIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SplitCommissionsIndicator\"},\"OrderBookedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBookedDate\"},\"OrderBilledDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBilledDate\"},\"OrderBacklogReportedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReportedDate\"},\"OrderBacklogReleasedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReleasedDate\"},\"OrderCancellationDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCancellationDate\"},\"OrderReturnedDate\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReturnedDate\"},\"ShipmentToName\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToName\"},\"ShipmentToLocationId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToLocationId\"},\"ShipmentId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentId\"},\"CarrierId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CarrierId\"},\"ShipmentMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentMethodId\"},\"RequestedShipmentCarrierName\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RequestedShipmentCarrierName\"},\"AlternateCarrierAcceptableIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AlternateCarrierAcceptableIndicator\"},\"ActualShipmentCarrierName\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ActualShipmentCarrierName\"},\"ShipOrderCompleteIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipOrderCompleteIndicator\"},\"TotalOrderWeight\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderWeight\"},\"WeightUomId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WeightUomId\"},\"TotalOrderFreightChargeAmount\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderFreightChargeAmount\"},\"EarliestDeliveryWindowTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"EarliestDeliveryWindowTimestamp\"},\"LatestDeliveryWindowTimestamp\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"LatestDeliveryWindowTimestamp\"},\"AcknowledgementRequiredIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AcknowledgementRequiredIndicator\"},\"ExpediteOrderIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ExpediteOrderIndicator\"},\"DropShipmentIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DropShipmentIndicator\"},\"ServiceOrderIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ServiceOrderIndicator\"},\"ProductOrderIndicator\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ProductOrderIndicator\"},\"OrderDeliveryInstructions\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderDeliveryInstructions\"},\"CustomerCreditCheckNote\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckNote\"},\"MessageToCustomer\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MessageToCustomer\"},\"CustomerId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerId\"},\"CustomerAccountId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerAccountId\"},\"WarehouseId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WarehouseId\"},\"StoreId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"StoreId\"},\"CustomerIdentificationMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerIdentificationMethodId\"},\"PoNumber\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PoNumber\"},\"MarketingEventId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MarketingEventId\"},\"AdvertisingId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AdvertisingEventId\"},\"PaymentMethodId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PaymentMethodId\"},\"BillingCycleId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"BillingCycleId\"},\"ContractId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ContractId\"},\"SalesChannelId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SalesChannelId\"},\"DistributionChannelId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DistributionChannelId\"},\"OrderTypeId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTypeId\"},\"OrderClassificationId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderClassificationId\"},\"RejectionReasonId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RejectionReasonId\"},\"OrderProcessingStatusId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderProcessingStatusId\"},\"IsoCurrencyCode\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"IsoCurrencyCode\"},\"PointOfSaleId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PointOfSaleId\"},\"ResponsibilityCenterId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ResponsibilityCenterId\"},\"VendorId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"VendorId\"},\"DeviceId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DeviceId\"},\"SoftwareProductId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductId\"},\"SoftwareProductVersionNumber\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductVersionNumber\"},\"PromotionOfferId\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PromotionOfferId\"}}}"
 			},
 			"Compressed": false,
 			"SerDeInfo": null,
@@ -1558,7 +1343,7 @@
 		"IsSharedEntity": false,
 		"PublishStatus": "PUBLISHED",
 		"Properties": {
-			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"Order\",\"path\":\"Order.cdm.json/Order\"},\"description\":\"A document or commission by the customer to order products.\",\"primaryKey\":[\"OrderId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationNumber\"},\"dataType\":\"string\",\"dataTypeLength\":16,\"description\":\"The order confirmation number provided to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderConfirmationNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEnteredByEmployeeId\"},\"dataType\":\"integer\",\"description\":\"The employee ID of the employee entering the Order into the order entry system.\",\"isNullable\":true,\"name\":\"OrderEnteredByEmployeeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"NumberOfOrderLines\"},\"dataType\":\"integer\",\"description\":\"The number of Order Line Items associated with the Order.\",\"isNullable\":true,\"name\":\"NumberOfOrderLines\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReceivedTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the Order was received from the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderReceivedTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEntryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The date that the Order was entered into the order entry system.\",\"isNullable\":true,\"name\":\"OrderEntryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the Customer/Customer Account had a credit check in regard to the Order amount.\",\"isNullable\":true,\"name\":\"CustomerCreditCheckTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the Order was confirmed to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderConfirmationTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderRequestedDeliveryDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Customer/Customer Account requested delivery of the Order.\",\"isNullable\":true,\"name\":\"OrderRequestedDeliveryDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCommittedDeliveryDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date committed to the Customer/Customer Account for delivery of the Order.\",\"isNullable\":true,\"name\":\"OrderCommittedDeliveryDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentConfirmationTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that confirmation of the Shipment was made to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"ShipmentConfirmationTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderActualDeliveryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The actual timestamp of delivery of the Order to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderActualDeliveryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalRetailPriceAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total list price value of the ordered products = (list price per unit product price)x(quantity ordered) for each line item.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalRetailPriceAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalActualSalesPriceAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total actual price value of the ordered products = (actual selling price per unit product price)x(quantity ordered) for each line item.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalActualSalesPriceAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentPercentage\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total percentage of adjustment applied to the Order.\",\"isNullable\":true,\"scale\":8,\"name\":\"OrderTotalAdjustmentPercentage\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of adjustment applied to the Order.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalAdjustmentAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total value of the Order including Adjustment(s).\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalShippingChargeAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of shipping charge associated with the order.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalShippingChargeAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalTaxAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of all taxes applied to the Order.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalTaxAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalInvoicedAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total invoiced amount to the Customer/Customer Account = (per units selling price of products)x(quantity purchased) for all line items + all discounts + all rebates + adjustments/credits + taxes\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalInvoicedAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalGratuityAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of gratuity paid.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalGratuityAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalPaidAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount including gratuity.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalPaidAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalCommissionsPayableAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of commissions payable and due in regard to the Order.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalCommissionsPayableAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SplitCommissionsIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the commissions are to be split between two or more employees.\",\"isNullable\":true,\"name\":\"SplitCommissionsIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBookedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date signifying that the order has all the needed information to be considered a firm order and to be processed.\",\"isNullable\":true,\"name\":\"OrderBookedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBilledDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order was billed.\",\"isNullable\":true,\"name\":\"OrderBilledDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReportedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order backlog was reported.\",\"isNullable\":true,\"name\":\"OrderBacklogReportedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReleasedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order backlog was released/fulfilled.\",\"isNullable\":true,\"name\":\"OrderBacklogReleasedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCancellationDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order was cancelled.\",\"isNullable\":true,\"name\":\"OrderCancellationDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReturnedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order was returned.\",\"isNullable\":true,\"name\":\"OrderReturnedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the ship-to party.\",\"isNullable\":true,\"name\":\"ShipmentToName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"ShipmentToLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment.\",\"isNullable\":true,\"name\":\"ShipmentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CarrierId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Carrier.\",\"isNullable\":true,\"name\":\"CarrierId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment Method.\",\"isNullable\":true,\"name\":\"ShipmentMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RequestedShipmentCarrierName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the Carrier for the Shipment requested by the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"RequestedShipmentCarrierName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AlternateCarrierAcceptableIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that an alternate Carrier of the Shipment would be acceptable to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"AlternateCarrierAcceptableIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ActualShipmentCarrierName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The Carrier of the Shipment.\",\"isNullable\":true,\"name\":\"ActualShipmentCarrierName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipOrderCompleteIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is only to be shipped when complete - no partial shipments.\",\"isNullable\":true,\"name\":\"ShipOrderCompleteIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total weight of the Order.\",\"isNullable\":true,\"scale\":8,\"name\":\"TotalOrderWeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WeightUomId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Unit Of Measure.\",\"isNullable\":true,\"name\":\"WeightUomId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderFreightChargeAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total order freight charges amount.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalOrderFreightChargeAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"EarliestDeliveryWindowTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The earliest timestamp that the order should be made available for delivery.\",\"isNullable\":true,\"name\":\"EarliestDeliveryWindowTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"LatestDeliveryWindowTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The latest timestamp that the order should be made available for delivery.\",\"isNullable\":true,\"name\":\"LatestDeliveryWindowTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AcknowledgementRequiredIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that an acknowledgement  to the Customer/Customer Account is required for the Order.\",\"isNullable\":true,\"name\":\"AcknowledgementRequiredIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ExpediteOrderIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is to be expedited.\",\"isNullable\":true,\"name\":\"ExpediteOrderIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DropShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is to be drop shipped.\",\"isNullable\":true,\"name\":\"DropShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ServiceOrderIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is for Service Products.\",\"isNullable\":true,\"name\":\"ServiceOrderIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ProductOrderIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is for Products.\",\"isNullable\":true,\"name\":\"ProductOrderIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderDeliveryInstructions\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"Instructions related to the delivery of the Order.\",\"isNullable\":true,\"name\":\"OrderDeliveryInstructions\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the Order credit check.\",\"isNullable\":true,\"name\":\"CustomerCreditCheckNote\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MessageToCustomer\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A message to the Customer/Customer Account regarding the Order.\",\"isNullable\":true,\"name\":\"MessageToCustomer\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer.\",\"isNullable\":true,\"name\":\"CustomerId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerAccountId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer Account.\",\"isNullable\":true,\"name\":\"CustomerAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WarehouseId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Warehouse.\",\"isNullable\":true,\"name\":\"WarehouseId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"StoreId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Store.\",\"isNullable\":true,\"name\":\"StoreId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerIdentificationMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a customer identification method.\",\"isNullable\":true,\"name\":\"CustomerIdentificationMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PoNumber\"},\"dataType\":\"string\",\"dataTypeLength\":18,\"description\":\"The unique identifier of a Purchase Order.\",\"isNullable\":true,\"name\":\"PoNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MarketingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Marketing Event.\",\"isNullable\":true,\"name\":\"MarketingEventId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AdvertisingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Event.\",\"isNullable\":true,\"name\":\"AdvertisingEventId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SalesMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Sales Method.\",\"isNullable\":true,\"name\":\"SalesMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PaymentMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Payment Method.\",\"isNullable\":true,\"name\":\"PaymentMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"BillingCycleId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Billing Cycle.\",\"isNullable\":true,\"name\":\"BillingCycleId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ContractId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Contract.\",\"isNullable\":true,\"name\":\"ContractId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SalesChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Channel.\",\"isNullable\":true,\"name\":\"SalesChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DistributionChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Channel.\",\"isNullable\":true,\"name\":\"DistributionChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Type.\",\"isNullable\":true,\"name\":\"OrderTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderClassificationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Classification.\",\"isNullable\":true,\"name\":\"OrderClassificationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RejectionReasonId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Rejection Reason.\",\"isNullable\":true,\"name\":\"RejectionReasonId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderProcessingStatusId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Processing Status.\",\"isNullable\":true,\"name\":\"OrderProcessingStatusId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"IsoCurrencyCode\"},\"dataType\":\"string\",\"dataTypeLength\":3,\"description\":\"The ISO 4217 currency code.\",\"isNullable\":true,\"name\":\"IsoCurrencyCode\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PointOfSaleId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Point-Of-Sale.\",\"isNullable\":true,\"name\":\"PointOfSaleId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ResponsibilityCenterId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Responsibility Center.\",\"isNullable\":true,\"name\":\"ResponsibilityCenterId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"VendorId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Vendor.\",\"isNullable\":true,\"name\":\"VendorId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DeviceId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Device.\",\"isNullable\":true,\"name\":\"DeviceId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a software product.\",\"isNullable\":true,\"name\":\"SoftwareProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductVersionNumber\"},\"dataType\":\"integer\",\"description\":\"The version number of the software product.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PromotionOfferId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Promotion Offer. The Promotion Offer ID is unique to each account or party that is offered to.\",\"isNullable\":true,\"name\":\"PromotionOfferId\"}]}}}",
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"name\":\"Order\",\"description\":\"A document or commission by the customer to order products.\",\"baseEntityReference\":{\"name\":\"Order\",\"path\":\"Order.cdm.json/Order\"},\"primaryKey\":[\"OrderId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationNumber\"},\"dataType\":\"string\",\"dataTypeLength\":16,\"description\":\"The order confirmation number provided to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderConfirmationNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEnteredByEmployeeId\"},\"dataType\":\"integer\",\"description\":\"The employee ID of the employee entering the Order into the order entry system.\",\"isNullable\":true,\"name\":\"OrderEnteredByEmployeeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"NumberOfOrderLines\"},\"dataType\":\"integer\",\"description\":\"The number of Order Line Items associated with the Order.\",\"isNullable\":true,\"name\":\"NumberOfOrderLines\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReceivedTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the Order was received from the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderReceivedTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderEntryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The date that the Order was entered into the order entry system.\",\"isNullable\":true,\"name\":\"OrderEntryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the Customer/Customer Account had a credit check in regard to the Order amount.\",\"isNullable\":true,\"name\":\"CustomerCreditCheckTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderConfirmationTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the Order was confirmed to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderConfirmationTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderRequestedDeliveryDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Customer/Customer Account requested delivery of the Order.\",\"isNullable\":true,\"name\":\"OrderRequestedDeliveryDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCommittedDeliveryDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date committed to the Customer/Customer Account for delivery of the Order.\",\"isNullable\":true,\"name\":\"OrderCommittedDeliveryDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentConfirmationTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that confirmation of the Shipment was made to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"ShipmentConfirmationTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderActualDeliveryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The actual timestamp of delivery of the Order to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"OrderActualDeliveryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalRetailPriceAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total list price value of the ordered products = (list price per unit product price)x(quantity ordered) for each line item.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalRetailPriceAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalActualSalesPriceAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total actual price value of the ordered products = (actual selling price per unit product price)x(quantity ordered) for each line item.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalActualSalesPriceAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentPercentage\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total percentage of adjustment applied to the Order.\",\"isNullable\":true,\"scale\":8,\"name\":\"OrderTotalAdjustmentPercentage\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAdjustmentAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of adjustment applied to the Order.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalAdjustmentAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total value of the Order including Adjustment(s).\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalShippingChargeAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of shipping charge associated with the order.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalShippingChargeAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalTaxAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of all taxes applied to the Order.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalTaxAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTotalInvoicedAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total invoiced amount to the Customer/Customer Account = (per units selling price of products)x(quantity purchased) for all line items + all discounts + all rebates + adjustments/credits + taxes\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderTotalInvoicedAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalGratuityAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of gratuity paid.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalGratuityAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalPaidAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount including gratuity.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalPaidAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalCommissionsPayableAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of commissions payable and due in regard to the Order.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalCommissionsPayableAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SplitCommissionsIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the commissions are to be split between two or more employees.\",\"isNullable\":true,\"name\":\"SplitCommissionsIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBookedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date signifying that the order has all the needed information to be considered a firm order and to be processed.\",\"isNullable\":true,\"name\":\"OrderBookedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBilledDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order was billed.\",\"isNullable\":true,\"name\":\"OrderBilledDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReportedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order backlog was reported.\",\"isNullable\":true,\"name\":\"OrderBacklogReportedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderBacklogReleasedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order backlog was released/fulfilled.\",\"isNullable\":true,\"name\":\"OrderBacklogReleasedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderCancellationDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order was cancelled.\",\"isNullable\":true,\"name\":\"OrderCancellationDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderReturnedDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Order was returned.\",\"isNullable\":true,\"name\":\"OrderReturnedDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the ship-to party.\",\"isNullable\":true,\"name\":\"ShipmentToName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentToLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"ShipmentToLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment.\",\"isNullable\":true,\"name\":\"ShipmentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CarrierId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Carrier.\",\"isNullable\":true,\"name\":\"CarrierId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipmentMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment Method.\",\"isNullable\":true,\"name\":\"ShipmentMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RequestedShipmentCarrierName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the Carrier for the Shipment requested by the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"RequestedShipmentCarrierName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AlternateCarrierAcceptableIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that an alternate Carrier of the Shipment would be acceptable to the Customer/Customer Account.\",\"isNullable\":true,\"name\":\"AlternateCarrierAcceptableIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ActualShipmentCarrierName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The Carrier of the Shipment.\",\"isNullable\":true,\"name\":\"ActualShipmentCarrierName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ShipOrderCompleteIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is only to be shipped when complete - no partial shipments.\",\"isNullable\":true,\"name\":\"ShipOrderCompleteIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total weight of the Order.\",\"isNullable\":true,\"scale\":8,\"name\":\"TotalOrderWeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WeightUomId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Unit Of Measure.\",\"isNullable\":true,\"name\":\"WeightUomId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"TotalOrderFreightChargeAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total order freight charges amount.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalOrderFreightChargeAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"EarliestDeliveryWindowTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The earliest timestamp that the order should be made available for delivery.\",\"isNullable\":true,\"name\":\"EarliestDeliveryWindowTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"LatestDeliveryWindowTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The latest timestamp that the order should be made available for delivery.\",\"isNullable\":true,\"name\":\"LatestDeliveryWindowTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AcknowledgementRequiredIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that an acknowledgement  to the Customer/Customer Account is required for the Order.\",\"isNullable\":true,\"name\":\"AcknowledgementRequiredIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ExpediteOrderIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is to be expedited.\",\"isNullable\":true,\"name\":\"ExpediteOrderIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DropShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is to be drop shipped.\",\"isNullable\":true,\"name\":\"DropShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ServiceOrderIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is for Service Products.\",\"isNullable\":true,\"name\":\"ServiceOrderIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ProductOrderIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Order is for Products.\",\"isNullable\":true,\"name\":\"ProductOrderIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderDeliveryInstructions\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"Instructions related to the delivery of the Order.\",\"isNullable\":true,\"name\":\"OrderDeliveryInstructions\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerCreditCheckNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the Order credit check.\",\"isNullable\":true,\"name\":\"CustomerCreditCheckNote\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MessageToCustomer\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A message to the Customer/Customer Account regarding the Order.\",\"isNullable\":true,\"name\":\"MessageToCustomer\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer.\",\"isNullable\":true,\"name\":\"CustomerId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerAccountId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer Account.\",\"isNullable\":true,\"name\":\"CustomerAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"WarehouseId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Warehouse.\",\"isNullable\":true,\"name\":\"WarehouseId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"StoreId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Store.\",\"isNullable\":true,\"name\":\"StoreId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"CustomerIdentificationMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a customer identification method.\",\"isNullable\":true,\"name\":\"CustomerIdentificationMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PoNumber\"},\"dataType\":\"string\",\"dataTypeLength\":18,\"description\":\"The unique identifier of a Purchase Order.\",\"isNullable\":true,\"name\":\"PoNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"MarketingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Marketing Event.\",\"isNullable\":true,\"name\":\"MarketingEventId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"AdvertisingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Event.\",\"isNullable\":true,\"name\":\"AdvertisingId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PaymentMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Payment Method.\",\"isNullable\":true,\"name\":\"PaymentMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"BillingCycleId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Billing Cycle.\",\"isNullable\":true,\"name\":\"BillingCycleId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ContractId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Contract.\",\"isNullable\":true,\"name\":\"ContractId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SalesChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Channel.\",\"isNullable\":true,\"name\":\"SalesChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DistributionChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Channel.\",\"isNullable\":true,\"name\":\"DistributionChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Type.\",\"isNullable\":true,\"name\":\"OrderTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderClassificationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Classification.\",\"isNullable\":true,\"name\":\"OrderClassificationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"RejectionReasonId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Rejection Reason.\",\"isNullable\":true,\"name\":\"RejectionReasonId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"OrderProcessingStatusId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Processing Status.\",\"isNullable\":true,\"name\":\"OrderProcessingStatusId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"IsoCurrencyCode\"},\"dataType\":\"string\",\"dataTypeLength\":3,\"description\":\"The ISO 4217 currency code.\",\"isNullable\":true,\"name\":\"IsoCurrencyCode\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PointOfSaleId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Point-Of-Sale.\",\"isNullable\":true,\"name\":\"PointOfSaleId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"ResponsibilityCenterId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Responsibility Center.\",\"isNullable\":true,\"name\":\"ResponsibilityCenterId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"VendorId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Vendor.\",\"isNullable\":true,\"name\":\"VendorId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"DeviceId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Device.\",\"isNullable\":true,\"name\":\"DeviceId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a software product.\",\"isNullable\":true,\"name\":\"SoftwareProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"SoftwareProductVersionNumber\"},\"dataType\":\"integer\",\"description\":\"The version number of the software product.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Order.cdm.json/Order\",\"name\":\"PromotionOfferId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Promotion Offer. The Promotion Offer ID is unique to each account or party that is offered to.\",\"isNullable\":true,\"name\":\"PromotionOfferId\"}]}}}",
 			"Description": "A document or commission by the customer to order products.",
 			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
 			"PrimaryKeys": "OrderId",

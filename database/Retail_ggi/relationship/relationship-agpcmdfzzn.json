@@ -12,7 +12,7 @@
 		"ColumnRelationshipInformations": [
 			{
 				"FromColumnName": "AdvertisingEventId",
-				"ToColumnName": "AdvertisingEventId"
+				"ToColumnName": "AdvertisingId"
 			}
 		],
 		"Properties": {
@@ -22,7 +22,8 @@
 		"ObjectVersion": 1,
 		"ObjectId": "6acb8541-7c26-4314-9f33-91338eaabe4e",
 		"Name": "relationship-agpcmdfzzn",
-		"EntityType": "RELATIONSHIP"
+		"EntityType": "RELATIONSHIP",
+		"RelationshipType": 0
 	},
 	"type": "RELATIONSHIP"
 }
