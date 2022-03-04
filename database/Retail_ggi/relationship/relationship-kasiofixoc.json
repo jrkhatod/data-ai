@@ -1,0 +1,28 @@
+{
+	"name": "relationship-kasiofixoc",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Transaction",
+		"ToTableName": "ServiceRequestReason",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "TransactionId",
+				"ToColumnName": "TransactionId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"Transaction.cdm.json/Transaction\",\"toEntity\":\"ServiceRequestReason.cdm.json/ServiceRequestReason\",\"joinPairs\":[{\"fromAttribute\":\"TransactionId\",\"toAttribute\":\"TransactionId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "4fae975f-c3e7-4157-88d0-5cba6d8bc884",
+		"Name": "relationship-kasiofixoc",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

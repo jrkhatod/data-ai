@@ -1,0 +1,326 @@
+{
+	"name": "CommunicationDevice",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "DeviceId",
+					"Description": "The unique identifier of a Device.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "DeviceId"
+					}
+				},
+				{
+					"Name": "DeviceName",
+					"Description": "The name of a Device.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "DeviceName"
+					}
+				},
+				{
+					"Name": "DeviceDescription",
+					"Description": "The description of a Device.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "DeviceDescription"
+					}
+				},
+				{
+					"Name": "SerialNumber",
+					"Description": "The serial number of the device.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 30,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "SerialNumber"
+					}
+				},
+				{
+					"Name": "MacAddress",
+					"Description": "A MAC address is a hardware identification number that uniquely identifies a device on a network.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 20,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "MacAddress"
+					}
+				},
+				{
+					"Name": "Imei",
+					"Description": "The international mobile equipment identity (IMEI) is a unique identity for the mobile equipment and the International Mobile Subscriber Identity (IMSI) is a unique identity for the UICC and the USIM.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 20,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "Imei"
+					}
+				},
+				{
+					"Name": "ProcessorClockSpeedGhz",
+					"Description": "The processor clock speed in GHz.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "ProcessorClockSpeedGhz"
+					}
+				},
+				{
+					"Name": "MaximumMemoryGb",
+					"Description": "The user equipment maximum memory in GB.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "MaximumMemoryGb"
+					}
+				},
+				{
+					"Name": "OperatingSystemId",
+					"Description": "The unique identifier of an operating system.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "OperatingSystemId"
+					}
+				},
+				{
+					"Name": "OperatingSystemVersion",
+					"Description": "The version number of the operating system.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "OperatingSystemVersion"
+					}
+				},
+				{
+					"Name": "SoftwareProductId",
+					"Description": "The unique identifier of a software product.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "SoftwareProductId"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionNumber",
+					"Description": "The version number of the software product.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "SoftwareProductVersionNumber"
+					}
+				},
+				{
+					"Name": "ComputingDeviceTypeId",
+					"Description": "The unique identifier of a Computing Device Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationDevice.cdm.json/CommunicationDevice",
+						"Name": "ComputingDeviceTypeId"
+					}
+				}
+			],
+			"ColumnSetEntityName": "8b3c6e7b-a5d4-41bd-b916-354e4dd84939",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/CommunicationDevice",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/CommunicationDevice",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"DeviceId\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"DeviceId\"},\"DeviceName\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"DeviceName\"},\"DeviceDescription\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"DeviceDescription\"},\"SerialNumber\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"SerialNumber\"},\"MacAddress\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"MacAddress\"},\"Imei\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"Imei\"},\"ProcessorClockSpeedGhz\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"ProcessorClockSpeedGhz\"},\"MaximumMemoryGb\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"MaximumMemoryGb\"},\"OperatingSystemId\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"OperatingSystemId\"},\"OperatingSystemVersion\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"OperatingSystemVersion\"},\"SoftwareProductId\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"SoftwareProductId\"},\"SoftwareProductVersionNumber\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"SoftwareProductVersionNumber\"},\"ComputingDeviceTypeId\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"ComputingDeviceTypeId\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"CommunicationDevice\",\"path\":\"CommunicationDevice.cdm.json/CommunicationDevice\"},\"description\":\"An electronic device that can be attached to a network by wireless, telephone network or other means for the purpose of transmitting information.\",\"primaryKey\":[\"DeviceId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"DeviceId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Device.\",\"isNullable\":false,\"name\":\"DeviceId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"DeviceName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of a Device.\",\"isNullable\":true,\"name\":\"DeviceName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"DeviceDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512,\"description\":\"The description of a Device.\",\"isNullable\":true,\"name\":\"DeviceDescription\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"SerialNumber\"},\"dataType\":\"string\",\"dataTypeLength\":30,\"description\":\"The serial number of the device.\",\"isNullable\":true,\"name\":\"SerialNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"MacAddress\"},\"dataType\":\"string\",\"dataTypeLength\":20,\"description\":\"A MAC address is a hardware identification number that uniquely identifies a device on a network.\",\"isNullable\":true,\"name\":\"MacAddress\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"Imei\"},\"dataType\":\"string\",\"dataTypeLength\":20,\"description\":\"The international mobile equipment identity (IMEI) is a unique identity for the mobile equipment and the International Mobile Subscriber Identity (IMSI) is a unique identity for the UICC and the USIM.\",\"isNullable\":true,\"name\":\"Imei\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"ProcessorClockSpeedGhz\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The processor clock speed in GHz.\",\"isNullable\":true,\"scale\":2,\"name\":\"ProcessorClockSpeedGhz\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"MaximumMemoryGb\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The user equipment maximum memory in GB.\",\"isNullable\":true,\"scale\":2,\"name\":\"MaximumMemoryGb\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"OperatingSystemId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an operating system.\",\"isNullable\":true,\"name\":\"OperatingSystemId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"OperatingSystemVersion\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"The version number of the operating system.\",\"isNullable\":true,\"name\":\"OperatingSystemVersion\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"SoftwareProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a software product.\",\"isNullable\":true,\"name\":\"SoftwareProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"SoftwareProductVersionNumber\"},\"dataType\":\"integer\",\"description\":\"The version number of the software product.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"name\":\"ComputingDeviceTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Computing Device Type.\",\"isNullable\":true,\"name\":\"ComputingDeviceTypeId\"}]}}}",
+			"Description": "An electronic device that can be attached to a network by wireless, telephone network or other means for the purpose of transmitting information.",
+			"DisplayFolderInfo": "{\"name\":\"Customer Service & Contact Management\",\"colorCode\":\"#502006\"}",
+			"PrimaryKeys": "DeviceId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"DeviceId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"DeviceName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DeviceDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SerialNumber\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"MacAddress\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"Imei\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ProcessorClockSpeedGhz\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"MaximumMemoryGb\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OperatingSystemId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OperatingSystemVersion\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SoftwareProductId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SoftwareProductVersionNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ComputingDeviceTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "a059eb94-6a38-41e2-96f3-f5c6edde3824",
+		"Name": "CommunicationDevice",
+		"Description": "An electronic device that can be attached to a network by wireless, telephone network or other means for the purpose of transmitting information.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

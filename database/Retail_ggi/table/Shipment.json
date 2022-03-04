@@ -1,0 +1,1861 @@
+{
+	"name": "Shipment",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "ShipmentId",
+					"Description": "The unique identifier of a Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentId"
+					}
+				},
+				{
+					"Name": "MasterShipmentNumber",
+					"Description": "A master shipment number is used to tie multiple shipments together. It is typically used when one or more shipments are to be considered to be a single shipment for billing purposes.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "MasterShipmentNumber"
+					}
+				},
+				{
+					"Name": "TrackingIdentifier",
+					"Description": "A tracking identifier is a number or alphanumeric string consisting of a series of numbers and letters, used to uniquely identify a handling unit associated with a shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "TrackingIdentifier"
+					}
+				},
+				{
+					"Name": "ShipmentBookingNumber",
+					"Description": "Reservation number used to secure equipment and act as a control number prior to completion of a B/L.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentBookingNumber"
+					}
+				},
+				{
+					"Name": "ExportLicenseNumber",
+					"Description": "An export license number that may be associated with the shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ExportLicenseNumber"
+					}
+				},
+				{
+					"Name": "InsurancePolicyId",
+					"Description": "The unique identifier of an Insurance Policy.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "InsurancePolicyId"
+					}
+				},
+				{
+					"Name": "GlobalShipmentIdentificationNumber",
+					"Description": "The Global Shipment Identification Number (GSIN) is part of the GS1 system of standards. It is used to identify shipments.\n\nA shipment, which may be comprised of one or more logistic units, is intended to be delivered together. The logistic units belonging to a particular shipment keep the same GSIN during all transport stages, from origin to final destination.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 17,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "GlobalShipmentIdentificationNumber"
+					}
+				},
+				{
+					"Name": "GlobalIdentificationNumberForConsignment",
+					"Description": "The Global Identification Number for Consignment (GINC) is part of the GS1 system of standards. It is used to identify a grouping of goods that has been consigned to a freight forwarder and is intended to be transported as a single group. \n\nGINC is used to identify consignments comprised of one or more logistic units, potentially belonging to different shipments, that are intended to be transported together for a portion of their transportation journey. This typically occurs when shipments are consolidated.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 30,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "GlobalIdentificationNumberForConsignment"
+					}
+				},
+				{
+					"Name": "ShipmentOrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentOrderId"
+					}
+				},
+				{
+					"Name": "ShipmentOrderLineNumber",
+					"Description": "The number that identifies the Order Line Item.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentOrderLineNumber"
+					}
+				},
+				{
+					"Name": "ConsignorName",
+					"Description": "The name of the person or firm whose name appears on the air waybill as the party contracting with the carrier for carriage of the goods.  Usually the shipper.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsignorName"
+					}
+				},
+				{
+					"Name": "ConsignorPartyId",
+					"Description": "The unique identifier of a Party.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsignorPartyId"
+					}
+				},
+				{
+					"Name": "ConsignorCustomerAccountId",
+					"Description": "The unique identifier of a Customer Account.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsignorCustomerAccountId"
+					}
+				},
+				{
+					"Name": "ConsignorLocationId",
+					"Description": "The unique identifier of a Location.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsignorLocationId"
+					}
+				},
+				{
+					"Name": "ConsignorSignatureImage",
+					"Description": "The consignor's signature or signature image.",
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsignorSignatureImage"
+					}
+				},
+				{
+					"Name": "ConsigneeName",
+					"Description": "The Consignee is the person or legal entity in a freight contract to whom goods have been shipped or turned over to care.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsigneeName"
+					}
+				},
+				{
+					"Name": "ConsigneePartyId",
+					"Description": "The unique identifier of a Party.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsigneePartyId"
+					}
+				},
+				{
+					"Name": "ConsigneeCustomerAccountId",
+					"Description": "The unique identifier of a Customer Account.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsigneeCustomerAccountId"
+					}
+				},
+				{
+					"Name": "ConsigneeLocationId",
+					"Description": "The unique identifier of a Location.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsigneeLocationId"
+					}
+				},
+				{
+					"Name": "ConsigneeSignatureImage",
+					"Description": "The consignee's signature or signature image.",
+					"OriginDataTypeName": {
+						"TypeName": "binary",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "binary"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsigneeSignatureImage"
+					}
+				},
+				{
+					"Name": "NotifyPartyId",
+					"Description": "The unique identifier of a Party.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "NotifyPartyId"
+					}
+				},
+				{
+					"Name": "ShipmentFromName",
+					"Description": "The name of the ship-from party.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentFromName"
+					}
+				},
+				{
+					"Name": "ShipmentFromLocationId",
+					"Description": "The unique identifier of a Location.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentFromLocationId"
+					}
+				},
+				{
+					"Name": "ShipmentToName",
+					"Description": "The name of the ship-to party.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentToName"
+					}
+				},
+				{
+					"Name": "ShipmentToLocationId",
+					"Description": "The unique identifier of a Location.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentToLocationId"
+					}
+				},
+				{
+					"Name": "ShipmentConditionId",
+					"Description": "The unique identifier of a Shipment Condition.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentConditionId"
+					}
+				},
+				{
+					"Name": "ShipmentTotalNetWeight",
+					"Description": "Net Weight - The total weight of a shipment less the weight of containers, pallets, nets or straps.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentTotalNetWeight"
+					}
+				},
+				{
+					"Name": "ShipmentTotalGrossWeight",
+					"Description": "The full weight of a shipment including goods and packaging.\n\nThe weight of the shipment including all packing, blocking, platforms, special bracing, etc., if required. (includes weight of unit load device, when applicable.)",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentTotalGrossWeight"
+					}
+				},
+				{
+					"Name": "ShipmentTotalChargeableWeight",
+					"Description": "The weight of the shipment used in determining shipment charges. \n\nThe chargeable weight may be the dimensional weight, or on container shipments, the gross weight of the shipment less the tare weight of the container.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentTotalChargeableWeight"
+					}
+				},
+				{
+					"Name": "PackingInstructions",
+					"Description": "Instructions for shipping personnel regarding the associated Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PackingInstructions"
+					}
+				},
+				{
+					"Name": "DeliveryInstructions",
+					"Description": "Specific information provided to the inland carrier concerning the arrangement made by the Freight Forwarder to deliver items to the particular pier or steamship line.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "DeliveryInstructions"
+					}
+				},
+				{
+					"Name": "ArrangementsInAdvanceInstructions",
+					"Description": "Certain commodities, such as gold, gems, live animals etc., require arrangements to be made in advance with the Carriers.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ArrangementsInAdvanceInstructions"
+					}
+				},
+				{
+					"Name": "DeclarationByForeignShipperStatement",
+					"Description": "A statement by the Shipper in the foreign country attesting to certain facts.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "DeclarationByForeignShipperStatement"
+					}
+				},
+				{
+					"Name": "HiddenDamageStatement",
+					"Description": "The statement regarding to any hidden damages allocated to the Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "HiddenDamageStatement"
+					}
+				},
+				{
+					"Name": "ArrivalNoticeStatement",
+					"Description": "An advice that the carrier sends to the consignee advising of goods coming forward for delivery. Pertinent information such as BL number, container number and total charges due from consignee etc., are included and sent to consignee prior to vessel arrival. This is done gratuitously by the carrier to ensure smooth delivery but there is no obligation by the carrier to do so. The responsibility to monitor the transit and present himself to take timely delivery still rests with the consignee.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2048,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ArrivalNoticeStatement"
+					}
+				},
+				{
+					"Name": "EstimatedShipmentCost",
+					"Description": "The estimated total shipment cost amount.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "EstimatedShipmentCost"
+					}
+				},
+				{
+					"Name": "ShipmentAgreedValuationAmount",
+					"Description": "The value of a shipment agreed upon in order to secure a specific freight rate.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentAgreedValuationAmount"
+					}
+				},
+				{
+					"Name": "ShipmentCarrierLiabilityAmount",
+					"Description": "The amount of declared value on a shipment that is over the carrier's liability",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentCarrierLiabilityAmount"
+					}
+				},
+				{
+					"Name": "ShipmentAllInAmount",
+					"Description": "The total price to move cargo from origin to destination, inclusive of all charges.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentAllInAmount"
+					}
+				},
+				{
+					"Name": "ShipmentExcessValueAmount",
+					"Description": "The amount of declared value on a shipment that is over the carrier's liability",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentExcessValueAmount"
+					}
+				},
+				{
+					"Name": "ShipmentTotalChargesAmount",
+					"Description": "The total amount of all charges associated with the shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentTotalChargesAmount"
+					}
+				},
+				{
+					"Name": "CollectOnDeliveryIndicator",
+					"Description": "Indicates that the shipment is collect.\n\nA transportation service under which the purchase price of the goods in collected by the carrier from the receiver at the time of delivery. Payment Is subsequently transmitted to the shipper. Carriers charge a nominal fee for this service. Payment is due upon delivery. There are no credit provisions in COD service.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "CollectOnDeliveryIndicator"
+					}
+				},
+				{
+					"Name": "AutomaticProofOfDeliveryRequiredIndicator",
+					"Description": "Indicates that a POD is required.\n\nAn Automatic Proof of Delivery (POD)  is information automatically sent to payer containing name of person who signed for the package with timestamp of delivery.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "AutomaticProofOfDeliveryRequiredIndicator"
+					}
+				},
+				{
+					"Name": "HoldForPickupShipmentIndicator",
+					"Description": "Indicates that freight is to be held at the carrier's destination location for pickup by the recipient.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "HoldForPickupShipmentIndicator"
+					}
+				},
+				{
+					"Name": "AstrayShipmentIndicator",
+					"Description": "Indicates that the shipment is traveling without paperwork or on paperwork in place of the original",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "AstrayShipmentIndicator"
+					}
+				},
+				{
+					"Name": "InterlineShipmentIndicator",
+					"Description": "Indicates that the shipment requires the movement of a shipment via two or more carriers.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "InterlineShipmentIndicator"
+					}
+				},
+				{
+					"Name": "IntermodalShipmentIndicator",
+					"Description": "Indicates that the shipment requires the movement of goods by more than one mode of Transport, i.e. railroad, truck, ship and airplane, in the same ULD, under a singe waybill.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "IntermodalShipmentIndicator"
+					}
+				},
+				{
+					"Name": "PrePaidShipmentIndicator",
+					"Description": "Freight and charges are required to be paid by shipper before original bill of lading is released to them.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PrePaidShipmentIndicator"
+					}
+				},
+				{
+					"Name": "WithoutReserveShipmentIndicator",
+					"Description": "A term indicating that a shipper's agent or representative is empowered to make definitive decisions and adjustments abroad without approval of the group or individual represented",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "WithoutReserveShipmentIndicator"
+					}
+				},
+				{
+					"Name": "NotifyOnArrivalIndicator",
+					"Description": "Indicates that the consignor requires to be notified upon receipt of the shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "NotifyOnArrivalIndicator"
+					}
+				},
+				{
+					"Name": "DoorToDoorShipmentIndicator",
+					"Description": "Through transportation of a container and its contents from consignor's premises to consignee's premises.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "DoorToDoorShipmentIndicator"
+					}
+				},
+				{
+					"Name": "ConsolidatedShipmentIndicator",
+					"Description": "Numerous shipments from different shippers to one consignee that are consolidated and treated as a single consignment.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ConsolidatedShipmentIndicator"
+					}
+				},
+				{
+					"Name": "UnclaimedShipmentIndicator",
+					"Description": "Indicates that the shipment has been unclaimed.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "UnclaimedShipmentIndicator"
+					}
+				},
+				{
+					"Name": "PartialShipmentAcceptableIndicator",
+					"Description": "An indicator denoting that the customer has agreed to partial shipments.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PartialShipmentAcceptableIndicator"
+					}
+				},
+				{
+					"Name": "EstimatedNumberDeliveryDays",
+					"Description": "The estimated number of days to deliver the Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "EstimatedNumberDeliveryDays"
+					}
+				},
+				{
+					"Name": "LatestAvailableShipDate",
+					"Description": "The latest ship date that is acceptable to the customer.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "LatestAvailableShipDate"
+					}
+				},
+				{
+					"Name": "ShipmentTenderTimestamp",
+					"Description": "The timestamp that the shipment was tendered or place or shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentTenderTimestamp"
+					}
+				},
+				{
+					"Name": "PlannedEarliestPickUpTimestamp",
+					"Description": "The earliest that the shipment can be picked up.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PlannedEarliestPickUpTimestamp"
+					}
+				},
+				{
+					"Name": "PlannedLatestPickUpTimestamp",
+					"Description": "The latest that the shipment can be picked-up.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PlannedLatestPickUpTimestamp"
+					}
+				},
+				{
+					"Name": "PlannedEarliestDeliveryTimestamp",
+					"Description": "The earliest that the shipment can be delivered.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PlannedEarliestDeliveryTimestamp"
+					}
+				},
+				{
+					"Name": "PlannedLatestDeliveryTimestamp",
+					"Description": "The latest that the shipment can be delivered.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PlannedLatestDeliveryTimestamp"
+					}
+				},
+				{
+					"Name": "PlannedShipTimestamp",
+					"Description": "The planned date of shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PlannedShipTimestamp"
+					}
+				},
+				{
+					"Name": "ActualShipTimestamp",
+					"Description": "The actual shipment date.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ActualShipTimestamp"
+					}
+				},
+				{
+					"Name": "CleanBillOfLadingTimestamp",
+					"Description": "The date that a clear bill of lading was determined, which is a receipt for goods issued by the Carrier indicating that the goods were received in good order and condition, without damages.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "CleanBillOfLadingTimestamp"
+					}
+				},
+				{
+					"Name": "ReleaseNoteTimestamp",
+					"Description": "Receipt signed by customer acknowledging delivery of goods.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ReleaseNoteTimestamp"
+					}
+				},
+				{
+					"Name": "EstimatedDeliveryTimestamp",
+					"Description": "Estimated delivery timestamp.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "EstimatedDeliveryTimestamp"
+					}
+				},
+				{
+					"Name": "ShipmentDeliveryTimestamp",
+					"Description": "The timestamp that the shipment was received or delivered at the ship-to address.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentDeliveryTimestamp"
+					}
+				},
+				{
+					"Name": "ArrivalNoticeIssuedTimestamp",
+					"Description": "The date that the Arrival Notice was issued or sent.\n\nAn advice that the carrier sends to the consignee advising of goods coming forward for delivery. Pertinent information such as BL number, container number and total charges due from consignee etc., are included and sent to consignee prior to vessel arrival. This is done gratuitously by the carrier to ensure smooth delivery but there is no obligation by the carrier to do so. The responsibility to monitor the transit and present himself to take timely delivery still rests with the consignee.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ArrivalNoticeIssuedTimestamp"
+					}
+				},
+				{
+					"Name": "AutomaticProofOfDeliveryPodIssuedTimestamp",
+					"Description": "The date that the automatic proof of delivery (POD) was issued.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "AutomaticProofOfDeliveryPodIssuedTimestamp"
+					}
+				},
+				{
+					"Name": "PackingTypeId",
+					"Description": "The unique identifier of a Packing Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PackingTypeId"
+					}
+				},
+				{
+					"Name": "ShipmentTypeId",
+					"Description": "The unique identifier of a Shipment Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentTypeId"
+					}
+				},
+				{
+					"Name": "ShipmentPriorityId",
+					"Description": "The unique identifier of a Shipment Priority.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentPriorityId"
+					}
+				},
+				{
+					"Name": "ShipmentMethodId",
+					"Description": "The unique identifier of a Shipment Method.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentMethodId"
+					}
+				},
+				{
+					"Name": "IncotermId",
+					"Description": "The unique identifier of a Incoterm.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "IncotermId"
+					}
+				},
+				{
+					"Name": "WarehouseId",
+					"Description": "The unique identifier of a Warehouse.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "WarehouseId"
+					}
+				},
+				{
+					"Name": "CarrierId",
+					"Description": "The unique identifier of a Carrier.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "CarrierId"
+					}
+				},
+				{
+					"Name": "RequestedCarrierId",
+					"Description": "The unique identifier of a Carrier.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "RequestedCarrierId"
+					}
+				},
+				{
+					"Name": "ChannelId",
+					"Description": "The unique identifier of a Channel.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ChannelId"
+					}
+				},
+				{
+					"Name": "ContainerId",
+					"Description": "The unique identifier of the container.\n\nThis would be the 'serial number' of the container if it is serialized.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ContainerId"
+					}
+				},
+				{
+					"Name": "PalletTypeId",
+					"Description": "The unique identifier of a Pallet Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PalletTypeId"
+					}
+				},
+				{
+					"Name": "PalletSerialNumber",
+					"Description": "The serial number of the Pallet.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 30,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "PalletSerialNumber"
+					}
+				},
+				{
+					"Name": "ItemSku",
+					"Description": "The Stock Keeping Unit identifier, which is typically used for inventory-related activities.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 20,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ItemSku"
+					}
+				},
+				{
+					"Name": "OriginationWarehouseId",
+					"Description": "The unique identifier of a Warehouse.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "OriginationWarehouseId"
+					}
+				},
+				{
+					"Name": "DestinationWarehouseId",
+					"Description": "The unique identifier of a Warehouse.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "DestinationWarehouseId"
+					}
+				},
+				{
+					"Name": "ShipmentHeight",
+					"Description": "The height of the Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentHeight"
+					}
+				},
+				{
+					"Name": "ShipmentWidth",
+					"Description": "The width of the Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentWidth"
+					}
+				},
+				{
+					"Name": "ShipmentLength",
+					"Description": "The length of the Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentLength"
+					}
+				},
+				{
+					"Name": "ShipmentNetWeight",
+					"Description": "The weight of the Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentNetWeight"
+					}
+				},
+				{
+					"Name": "ShipmentVolume",
+					"Description": "The volume of the shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 8,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "ShipmentVolume"
+					}
+				},
+				{
+					"Name": "VolumeUnitOfMeasureId",
+					"Description": "Note:\nA temporary divider header that is used to separate and organize information for the viewer.\n\nThis column is marked 'Logical Only' and is therefore 'for presentation only' and will not be used when generating DDL.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "VolumeUnitOfMeasureId"
+					}
+				},
+				{
+					"Name": "LengthWidthHeightUnitOfMeasureId",
+					"Description": "The unique identifier of a Unit Of Measure.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "LengthWidthHeightUnitOfMeasureId"
+					}
+				},
+				{
+					"Name": "WeightUnitOfMeasureId",
+					"Description": "The unique identifier of a Unit Of Measure.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "WeightUnitOfMeasureId"
+					}
+				},
+				{
+					"Name": "TimeSpentAtDeliveryLocation",
+					"Description": "The amount of time spent at the ship-to address to deliver the shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Shipment.cdm.json/Shipment",
+						"Name": "TimeSpentAtDeliveryLocation"
+					}
+				}
+			],
+			"ColumnSetEntityName": "1cdc11d1-77e6-406f-a520-9f13bfb8faf0",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/Shipment",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/Shipment",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"ShipmentId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentId\"},\"MasterShipmentNumber\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"MasterShipmentNumber\"},\"TrackingIdentifier\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"TrackingIdentifier\"},\"ShipmentBookingNumber\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentBookingNumber\"},\"ExportLicenseNumber\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ExportLicenseNumber\"},\"InsurancePolicyId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"InsurancePolicyId\"},\"GlobalShipmentIdentificationNumber\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"GlobalShipmentIdentificationNumber\"},\"GlobalIdentificationNumberForConsignment\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"GlobalIdentificationNumberForConsignment\"},\"ShipmentOrderId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentOrderId\"},\"ShipmentOrderLineNumber\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentOrderLineNumber\"},\"ConsignorName\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorName\"},\"ConsignorPartyId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorPartyId\"},\"ConsignorCustomerAccountId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorCustomerAccountId\"},\"ConsignorLocationId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorLocationId\"},\"ConsignorSignatureImage\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorSignatureImage\"},\"ConsigneeName\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeName\"},\"ConsigneePartyId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneePartyId\"},\"ConsigneeCustomerAccountId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeCustomerAccountId\"},\"ConsigneeLocationId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeLocationId\"},\"ConsigneeSignatureImage\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeSignatureImage\"},\"NotifyPartyId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"NotifyPartyId\"},\"ShipmentFromName\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentFromName\"},\"ShipmentFromLocationId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentFromLocationId\"},\"ShipmentToName\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentToName\"},\"ShipmentToLocationId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentToLocationId\"},\"ShipmentConditionId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentConditionId\"},\"ShipmentTotalNetWeight\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalNetWeight\"},\"ShipmentTotalGrossWeight\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalGrossWeight\"},\"ShipmentTotalChargeableWeight\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalChargeableWeight\"},\"PackingInstructions\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PackingInstructions\"},\"DeliveryInstructions\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DeliveryInstructions\"},\"ArrangementsInAdvanceInstructions\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ArrangementsInAdvanceInstructions\"},\"DeclarationByForeignShipperStatement\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DeclarationByForeignShipperStatement\"},\"HiddenDamageStatement\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"HiddenDamageStatement\"},\"ArrivalNoticeStatement\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ArrivalNoticeStatement\"},\"EstimatedShipmentCost\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"EstimatedShipmentCost\"},\"ShipmentAgreedValuationAmount\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentAgreedValuationAmount\"},\"ShipmentCarrierLiabilityAmount\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentCarrierLiabilityAmount\"},\"ShipmentAllInAmount\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentAllInAmount\"},\"ShipmentExcessValueAmount\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentExcessValueAmount\"},\"ShipmentTotalChargesAmount\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalChargesAmount\"},\"CollectOnDeliveryIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"CollectOnDeliveryIndicator\"},\"AutomaticProofOfDeliveryRequiredIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"AutomaticProofOfDeliveryRequiredIndicator\"},\"HoldForPickupShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"HoldForPickupShipmentIndicator\"},\"AstrayShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"AstrayShipmentIndicator\"},\"InterlineShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"InterlineShipmentIndicator\"},\"IntermodalShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"IntermodalShipmentIndicator\"},\"PrePaidShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PrePaidShipmentIndicator\"},\"WithoutReserveShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"WithoutReserveShipmentIndicator\"},\"NotifyOnArrivalIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"NotifyOnArrivalIndicator\"},\"DoorToDoorShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DoorToDoorShipmentIndicator\"},\"ConsolidatedShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsolidatedShipmentIndicator\"},\"UnclaimedShipmentIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"UnclaimedShipmentIndicator\"},\"PartialShipmentAcceptableIndicator\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PartialShipmentAcceptableIndicator\"},\"EstimatedNumberDeliveryDays\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"EstimatedNumberDeliveryDays\"},\"LatestAvailableShipDate\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"LatestAvailableShipDate\"},\"ShipmentTenderTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTenderTimestamp\"},\"PlannedEarliestPickUpTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedEarliestPickUpTimestamp\"},\"PlannedLatestPickUpTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedLatestPickUpTimestamp\"},\"PlannedEarliestDeliveryTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedEarliestDeliveryTimestamp\"},\"PlannedLatestDeliveryTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedLatestDeliveryTimestamp\"},\"PlannedShipTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedShipTimestamp\"},\"ActualShipTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ActualShipTimestamp\"},\"CleanBillOfLadingTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"CleanBillOfLadingTimestamp\"},\"ReleaseNoteTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ReleaseNoteTimestamp\"},\"EstimatedDeliveryTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"EstimatedDeliveryTimestamp\"},\"ShipmentDeliveryTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentDeliveryTimestamp\"},\"ArrivalNoticeIssuedTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ArrivalNoticeIssuedTimestamp\"},\"AutomaticProofOfDeliveryPodIssuedTimestamp\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"AutomaticProofOfDeliveryPodIssuedTimestamp\"},\"PackingTypeId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PackingTypeId\"},\"ShipmentTypeId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTypeId\"},\"ShipmentPriorityId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentPriorityId\"},\"ShipmentMethodId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentMethodId\"},\"IncotermId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"IncotermId\"},\"WarehouseId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"WarehouseId\"},\"CarrierId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"CarrierId\"},\"RequestedCarrierId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"RequestedCarrierId\"},\"ChannelId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ChannelId\"},\"ContainerId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ContainerId\"},\"PalletTypeId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PalletTypeId\"},\"PalletSerialNumber\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PalletSerialNumber\"},\"ItemSku\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ItemSku\"},\"OriginationWarehouseId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"OriginationWarehouseId\"},\"DestinationWarehouseId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DestinationWarehouseId\"},\"ShipmentHeight\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentHeight\"},\"ShipmentWidth\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentWidth\"},\"ShipmentLength\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentLength\"},\"ShipmentNetWeight\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentNetWeight\"},\"ShipmentVolume\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentVolume\"},\"VolumeUnitOfMeasureId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"VolumeUnitOfMeasureId\"},\"LengthWidthHeightUnitOfMeasureId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"LengthWidthHeightUnitOfMeasureId\"},\"WeightUnitOfMeasureId\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"WeightUnitOfMeasureId\"},\"TimeSpentAtDeliveryLocation\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"TimeSpentAtDeliveryLocation\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"Shipment\",\"path\":\"Shipment.cdm.json/Shipment\"},\"description\":\"A quantity of items, goods or bulk cargo that are shipped together.\",\"primaryKey\":[\"ShipmentId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment.\",\"isNullable\":false,\"name\":\"ShipmentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"MasterShipmentNumber\"},\"dataType\":\"integer\",\"description\":\"A master shipment number is used to tie multiple shipments together. It is typically used when one or more shipments are to be considered to be a single shipment for billing purposes.\",\"isNullable\":false,\"name\":\"MasterShipmentNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"TrackingIdentifier\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A tracking identifier is a number or alphanumeric string consisting of a series of numbers and letters, used to uniquely identify a handling unit associated with a shipment.\",\"isNullable\":true,\"name\":\"TrackingIdentifier\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentBookingNumber\"},\"dataType\":\"integer\",\"description\":\"Reservation number used to secure equipment and act as a control number prior to completion of a B/L.\",\"isNullable\":true,\"name\":\"ShipmentBookingNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ExportLicenseNumber\"},\"dataType\":\"integer\",\"description\":\"An export license number that may be associated with the shipment.\",\"isNullable\":true,\"name\":\"ExportLicenseNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"InsurancePolicyId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Insurance Policy.\",\"isNullable\":true,\"name\":\"InsurancePolicyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"GlobalShipmentIdentificationNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":17,\"description\":\"The Global Shipment Identification Number (GSIN) is part of the GS1 system of standards. It is used to identify shipments.\\n\\nA shipment, which may be comprised of one or more logistic units, is intended to be delivered together. The logistic units belonging to a particular shipment keep the same GSIN during all transport stages, from origin to final destination.\",\"isNullable\":true,\"scale\":0,\"name\":\"GlobalShipmentIdentificationNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"GlobalIdentificationNumberForConsignment\"},\"dataType\":\"string\",\"dataTypeLength\":30,\"description\":\"The Global Identification Number for Consignment (GINC) is part of the GS1 system of standards. It is used to identify a grouping of goods that has been consigned to a freight forwarder and is intended to be transported as a single group. \\n\\nGINC is used to identify consignments comprised of one or more logistic units, potentially belonging to different shipments, that are intended to be transported together for a portion of their transportation journey. This typically occurs when shipments are consolidated.\",\"isNullable\":true,\"name\":\"GlobalIdentificationNumberForConsignment\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentOrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":true,\"name\":\"ShipmentOrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentOrderLineNumber\"},\"dataType\":\"integer\",\"description\":\"The number that identifies the Order Line Item.\",\"isNullable\":true,\"name\":\"ShipmentOrderLineNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the person or firm whose name appears on the air waybill as the party contracting with the carrier for carriage of the goods.  Usually the shipper.\",\"isNullable\":true,\"name\":\"ConsignorName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorPartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":true,\"name\":\"ConsignorPartyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorCustomerAccountId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer Account.\",\"isNullable\":true,\"name\":\"ConsignorCustomerAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"ConsignorLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsignorSignatureImage\"},\"dataType\":\"binary\",\"description\":\"The consignor's signature or signature image.\",\"isNullable\":true,\"name\":\"ConsignorSignatureImage\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The Consignee is the person or legal entity in a freight contract to whom goods have been shipped or turned over to care.\",\"isNullable\":true,\"name\":\"ConsigneeName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneePartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":true,\"name\":\"ConsigneePartyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeCustomerAccountId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer Account.\",\"isNullable\":true,\"name\":\"ConsigneeCustomerAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"ConsigneeLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsigneeSignatureImage\"},\"dataType\":\"binary\",\"description\":\"The consignee's signature or signature image.\",\"isNullable\":true,\"name\":\"ConsigneeSignatureImage\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"NotifyPartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":true,\"name\":\"NotifyPartyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentFromName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the ship-from party.\",\"isNullable\":true,\"name\":\"ShipmentFromName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentFromLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"ShipmentFromLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentToName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the ship-to party.\",\"isNullable\":true,\"name\":\"ShipmentToName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentToLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"ShipmentToLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentConditionId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment Condition.\",\"isNullable\":true,\"name\":\"ShipmentConditionId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalNetWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"Net Weight - The total weight of a shipment less the weight of containers, pallets, nets or straps.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentTotalNetWeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalGrossWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The full weight of a shipment including goods and packaging.\\n\\nThe weight of the shipment including all packing, blocking, platforms, special bracing, etc., if required. (includes weight of unit load device, when applicable.)\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentTotalGrossWeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalChargeableWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The weight of the shipment used in determining shipment charges. \\n\\nThe chargeable weight may be the dimensional weight, or on container shipments, the gross weight of the shipment less the tare weight of the container.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentTotalChargeableWeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PackingInstructions\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"Instructions for shipping personnel regarding the associated Shipment.\",\"isNullable\":true,\"name\":\"PackingInstructions\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DeliveryInstructions\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"Specific information provided to the inland carrier concerning the arrangement made by the Freight Forwarder to deliver items to the particular pier or steamship line.\",\"isNullable\":true,\"name\":\"DeliveryInstructions\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ArrangementsInAdvanceInstructions\"},\"dataType\":\"string\",\"dataTypeLength\":512,\"description\":\"Certain commodities, such as gold, gems, live animals etc., require arrangements to be made in advance with the Carriers.\",\"isNullable\":true,\"name\":\"ArrangementsInAdvanceInstructions\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DeclarationByForeignShipperStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"A statement by the Shipper in the foreign country attesting to certain facts.\",\"isNullable\":true,\"name\":\"DeclarationByForeignShipperStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"HiddenDamageStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"The statement regarding to any hidden damages allocated to the Shipment.\",\"isNullable\":true,\"name\":\"HiddenDamageStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ArrivalNoticeStatement\"},\"dataType\":\"string\",\"dataTypeLength\":2048,\"description\":\"An advice that the carrier sends to the consignee advising of goods coming forward for delivery. Pertinent information such as BL number, container number and total charges due from consignee etc., are included and sent to consignee prior to vessel arrival. This is done gratuitously by the carrier to ensure smooth delivery but there is no obligation by the carrier to do so. The responsibility to monitor the transit and present himself to take timely delivery still rests with the consignee.\",\"isNullable\":true,\"name\":\"ArrivalNoticeStatement\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"EstimatedShipmentCost\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The estimated total shipment cost amount.\",\"isNullable\":true,\"scale\":2,\"name\":\"EstimatedShipmentCost\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentAgreedValuationAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The value of a shipment agreed upon in order to secure a specific freight rate.\",\"isNullable\":true,\"scale\":2,\"name\":\"ShipmentAgreedValuationAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentCarrierLiabilityAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The amount of declared value on a shipment that is over the carrier's liability\",\"isNullable\":true,\"scale\":2,\"name\":\"ShipmentCarrierLiabilityAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentAllInAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total price to move cargo from origin to destination, inclusive of all charges.\",\"isNullable\":true,\"scale\":2,\"name\":\"ShipmentAllInAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentExcessValueAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The amount of declared value on a shipment that is over the carrier's liability\",\"isNullable\":true,\"scale\":2,\"name\":\"ShipmentExcessValueAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTotalChargesAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of all charges associated with the shipment.\",\"isNullable\":true,\"scale\":2,\"name\":\"ShipmentTotalChargesAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"CollectOnDeliveryIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the shipment is collect.\\n\\nA transportation service under which the purchase price of the goods in collected by the carrier from the receiver at the time of delivery. Payment Is subsequently transmitted to the shipper. Carriers charge a nominal fee for this service. Payment is due upon delivery. There are no credit provisions in COD service.\",\"isNullable\":true,\"name\":\"CollectOnDeliveryIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"AutomaticProofOfDeliveryRequiredIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that a POD is required.\\n\\nAn Automatic Proof of Delivery (POD)  is information automatically sent to payer containing name of person who signed for the package with timestamp of delivery.\",\"isNullable\":true,\"name\":\"AutomaticProofOfDeliveryRequiredIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"HoldForPickupShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that freight is to be held at the carrier's destination location for pickup by the recipient.\",\"isNullable\":true,\"name\":\"HoldForPickupShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"AstrayShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the shipment is traveling without paperwork or on paperwork in place of the original\",\"isNullable\":true,\"name\":\"AstrayShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"InterlineShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the shipment requires the movement of a shipment via two or more carriers.\",\"isNullable\":true,\"name\":\"InterlineShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"IntermodalShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the shipment requires the movement of goods by more than one mode of Transport, i.e. railroad, truck, ship and airplane, in the same ULD, under a singe waybill.\",\"isNullable\":true,\"name\":\"IntermodalShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PrePaidShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Freight and charges are required to be paid by shipper before original bill of lading is released to them.\",\"isNullable\":true,\"name\":\"PrePaidShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"WithoutReserveShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"A term indicating that a shipper's agent or representative is empowered to make definitive decisions and adjustments abroad without approval of the group or individual represented\",\"isNullable\":true,\"name\":\"WithoutReserveShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"NotifyOnArrivalIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the consignor requires to be notified upon receipt of the shipment.\",\"isNullable\":true,\"name\":\"NotifyOnArrivalIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DoorToDoorShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Through transportation of a container and its contents from consignor's premises to consignee's premises.\",\"isNullable\":true,\"name\":\"DoorToDoorShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ConsolidatedShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Numerous shipments from different shippers to one consignee that are consolidated and treated as a single consignment.\",\"isNullable\":true,\"name\":\"ConsolidatedShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"UnclaimedShipmentIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the shipment has been unclaimed.\",\"isNullable\":true,\"name\":\"UnclaimedShipmentIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PartialShipmentAcceptableIndicator\"},\"dataType\":\"boolean\",\"description\":\"An indicator denoting that the customer has agreed to partial shipments.\",\"isNullable\":true,\"name\":\"PartialShipmentAcceptableIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"EstimatedNumberDeliveryDays\"},\"dataType\":\"integer\",\"description\":\"The estimated number of days to deliver the Shipment.\",\"isNullable\":true,\"name\":\"EstimatedNumberDeliveryDays\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"LatestAvailableShipDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The latest ship date that is acceptable to the customer.\",\"isNullable\":true,\"name\":\"LatestAvailableShipDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTenderTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the shipment was tendered or place or shipment.\",\"isNullable\":true,\"name\":\"ShipmentTenderTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedEarliestPickUpTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The earliest that the shipment can be picked up.\",\"isNullable\":true,\"name\":\"PlannedEarliestPickUpTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedLatestPickUpTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The latest that the shipment can be picked-up.\",\"isNullable\":true,\"name\":\"PlannedLatestPickUpTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedEarliestDeliveryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The earliest that the shipment can be delivered.\",\"isNullable\":true,\"name\":\"PlannedEarliestDeliveryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedLatestDeliveryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The latest that the shipment can be delivered.\",\"isNullable\":true,\"name\":\"PlannedLatestDeliveryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PlannedShipTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The planned date of shipment.\",\"isNullable\":true,\"name\":\"PlannedShipTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ActualShipTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The actual shipment date.\",\"isNullable\":true,\"name\":\"ActualShipTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"CleanBillOfLadingTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The date that a clear bill of lading was determined, which is a receipt for goods issued by the Carrier indicating that the goods were received in good order and condition, without damages.\",\"isNullable\":true,\"name\":\"CleanBillOfLadingTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ReleaseNoteTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"Receipt signed by customer acknowledging delivery of goods.\",\"isNullable\":true,\"name\":\"ReleaseNoteTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"EstimatedDeliveryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"Estimated delivery timestamp.\",\"isNullable\":true,\"name\":\"EstimatedDeliveryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentDeliveryTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp that the shipment was received or delivered at the ship-to address.\",\"isNullable\":true,\"name\":\"ShipmentDeliveryTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ArrivalNoticeIssuedTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The date that the Arrival Notice was issued or sent.\\n\\nAn advice that the carrier sends to the consignee advising of goods coming forward for delivery. Pertinent information such as BL number, container number and total charges due from consignee etc., are included and sent to consignee prior to vessel arrival. This is done gratuitously by the carrier to ensure smooth delivery but there is no obligation by the carrier to do so. The responsibility to monitor the transit and present himself to take timely delivery still rests with the consignee.\",\"isNullable\":true,\"name\":\"ArrivalNoticeIssuedTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"AutomaticProofOfDeliveryPodIssuedTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The date that the automatic proof of delivery (POD) was issued.\",\"isNullable\":true,\"name\":\"AutomaticProofOfDeliveryPodIssuedTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PackingTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Packing Type.\",\"isNullable\":true,\"name\":\"PackingTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment Type.\",\"isNullable\":true,\"name\":\"ShipmentTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentPriorityId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment Priority.\",\"isNullable\":true,\"name\":\"ShipmentPriorityId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentMethodId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment Method.\",\"isNullable\":true,\"name\":\"ShipmentMethodId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"IncotermId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Incoterm.\",\"isNullable\":true,\"name\":\"IncotermId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"WarehouseId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Warehouse.\",\"isNullable\":true,\"name\":\"WarehouseId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"CarrierId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Carrier.\",\"isNullable\":true,\"name\":\"CarrierId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"RequestedCarrierId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Carrier.\",\"isNullable\":true,\"name\":\"RequestedCarrierId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Channel.\",\"isNullable\":true,\"name\":\"ChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ContainerId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of the container.\\n\\nThis would be the 'serial number' of the container if it is serialized.\",\"isNullable\":true,\"name\":\"ContainerId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PalletTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Pallet Type.\",\"isNullable\":true,\"name\":\"PalletTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"PalletSerialNumber\"},\"dataType\":\"string\",\"dataTypeLength\":30,\"description\":\"The serial number of the Pallet.\",\"isNullable\":true,\"name\":\"PalletSerialNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ItemSku\"},\"dataType\":\"string\",\"dataTypeLength\":20,\"description\":\"The Stock Keeping Unit identifier, which is typically used for inventory-related activities.\",\"isNullable\":true,\"name\":\"ItemSku\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"OriginationWarehouseId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Warehouse.\",\"isNullable\":true,\"name\":\"OriginationWarehouseId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"DestinationWarehouseId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Warehouse.\",\"isNullable\":true,\"name\":\"DestinationWarehouseId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentHeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The height of the Shipment.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentHeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentWidth\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The width of the Shipment.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentWidth\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentLength\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The length of the Shipment.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentLength\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentNetWeight\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The weight of the Shipment.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentNetWeight\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"ShipmentVolume\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The volume of the shipment.\",\"isNullable\":true,\"scale\":8,\"name\":\"ShipmentVolume\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"VolumeUnitOfMeasureId\"},\"dataType\":\"integer\",\"description\":\"Note:\\nA temporary divider header that is used to separate and organize information for the viewer.\\n\\nThis column is marked 'Logical Only' and is therefore 'for presentation only' and will not be used when generating DDL.\",\"isNullable\":true,\"name\":\"VolumeUnitOfMeasureId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"LengthWidthHeightUnitOfMeasureId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Unit Of Measure.\",\"isNullable\":true,\"name\":\"LengthWidthHeightUnitOfMeasureId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"WeightUnitOfMeasureId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Unit Of Measure.\",\"isNullable\":true,\"name\":\"WeightUnitOfMeasureId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Shipment.cdm.json/Shipment\",\"name\":\"TimeSpentAtDeliveryLocation\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The amount of time spent at the ship-to address to deliver the shipment.\",\"isNullable\":true,\"name\":\"TimeSpentAtDeliveryLocation\"}]}}}",
+			"Description": "A quantity of items, goods or bulk cargo that are shipped together.",
+			"DisplayFolderInfo": "{\"name\":\"Shipping\",\"colorCode\":\"#1C508C\"}",
+			"PrimaryKeys": "ShipmentId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "2",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"ShipmentId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"MasterShipmentNumber\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"TrackingIdentifier\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentBookingNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ExportLicenseNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InsurancePolicyId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"GlobalShipmentIdentificationNumber\",\"type\":\"decimal(17,0)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"GlobalIdentificationNumberForConsignment\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentOrderId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentOrderLineNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsignorName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsignorPartyId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsignorCustomerAccountId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsignorLocationId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsignorSignatureImage\",\"type\":\"binary\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsigneeName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsigneePartyId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsigneeCustomerAccountId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsigneeLocationId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsigneeSignatureImage\",\"type\":\"binary\",\"nullable\":true,\"metadata\":{}},{\"name\":\"NotifyPartyId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentFromName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentFromLocationId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentToName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentToLocationId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentConditionId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentTotalNetWeight\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentTotalGrossWeight\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentTotalChargeableWeight\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PackingInstructions\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DeliveryInstructions\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ArrangementsInAdvanceInstructions\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DeclarationByForeignShipperStatement\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"HiddenDamageStatement\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ArrivalNoticeStatement\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"EstimatedShipmentCost\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentAgreedValuationAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentCarrierLiabilityAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentAllInAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentExcessValueAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentTotalChargesAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CollectOnDeliveryIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AutomaticProofOfDeliveryRequiredIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"HoldForPickupShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AstrayShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InterlineShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"IntermodalShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PrePaidShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"WithoutReserve",
+			"spark.sql.sources.schema.part.1": "ShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"NotifyOnArrivalIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DoorToDoorShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ConsolidatedShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"UnclaimedShipmentIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PartialShipmentAcceptableIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"EstimatedNumberDeliveryDays\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LatestAvailableShipDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentTenderTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PlannedEarliestPickUpTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PlannedLatestPickUpTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PlannedEarliestDeliveryTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PlannedLatestDeliveryTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PlannedShipTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ActualShipTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CleanBillOfLadingTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ReleaseNoteTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"EstimatedDeliveryTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentDeliveryTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ArrivalNoticeIssuedTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AutomaticProofOfDeliveryPodIssuedTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PackingTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentPriorityId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentMethodId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"IncotermId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"WarehouseId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CarrierId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"RequestedCarrierId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ChannelId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ContainerId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PalletTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PalletSerialNumber\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ItemSku\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OriginationWarehouseId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DestinationWarehouseId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentHeight\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentWidth\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentLength\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentNetWeight\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentVolume\",\"type\":\"decimal(18,8)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"VolumeUnitOfMeasureId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LengthWidthHeightUnitOfMeasureId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"WeightUnitOfMeasureId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TimeSpentAtDeliveryLocation\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "22f9ebbe-84c4-459a-9559-3a0d587117a7",
+		"Name": "Shipment",
+		"Description": "A quantity of items, goods or bulk cargo that are shipped together.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

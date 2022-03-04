@@ -1,0 +1,28 @@
+{
+	"name": "Retail_ggi",
+	"properties": {
+		"Description": "",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Retail\",\"Version\":\"0.1.0\"}}}",
+			"IsSyMSCDMDatabase": true,
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate"
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "3cbb4094-4602-4aeb-80be-e38c7b1055be",
+		"Name": "Retail_ggi",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}

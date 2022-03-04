@@ -1,0 +1,32 @@
+{
+	"name": "relationship-zvluwovrnx",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "OrderLine",
+		"ToTableName": "Shipment",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "OrderId",
+				"ToColumnName": "ShipmentOrderId"
+			},
+			{
+				"FromColumnName": "OrderLineNumber",
+				"ToColumnName": "ShipmentOrderLineNumber"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"OrderLine.cdm.json/OrderLine\",\"toEntity\":\"Shipment.cdm.json/Shipment\",\"joinPairs\":[{\"fromAttribute\":\"OrderId\",\"toAttribute\":\"ShipmentOrderId\"},{\"fromAttribute\":\"OrderLineNumber\",\"toAttribute\":\"ShipmentOrderLineNumber\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "f37b2e37-0e55-4f2f-a288-18eba21cae92",
+		"Name": "relationship-zvluwovrnx",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

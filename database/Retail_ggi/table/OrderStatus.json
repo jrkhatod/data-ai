@@ -1,0 +1,157 @@
+{
+	"name": "OrderStatus",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderStatus.cdm.json/OrderStatus",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "OrderStatusStartTimestamp",
+					"Description": "The start timestamp of the order status.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderStatus.cdm.json/OrderStatus",
+						"Name": "OrderStatusStartTimestamp"
+					}
+				},
+				{
+					"Name": "OrderStatusEndTimestamp",
+					"Description": "The end timestamp of the order status.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderStatus.cdm.json/OrderStatus",
+						"Name": "OrderStatusEndTimestamp"
+					}
+				},
+				{
+					"Name": "OrderStatusTypeId",
+					"Description": "The unique identifier of an Order Status Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderStatus.cdm.json/OrderStatus",
+						"Name": "OrderStatusTypeId"
+					}
+				}
+			],
+			"ColumnSetEntityName": "9d61dd6f-95ae-4dc0-8a33-862116e7f4a8",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderStatus",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderStatus",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderId\"},\"OrderStatusStartTimestamp\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderStatusStartTimestamp\"},\"OrderStatusEndTimestamp\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderStatusEndTimestamp\"},\"OrderStatusTypeId\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderStatusTypeId\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"OrderStatus\",\"path\":\"OrderStatus.cdm.json/OrderStatus\"},\"description\":\"The status of the associated Order.\",\"primaryKey\":[\"OrderId\",\"OrderStatusStartTimestamp\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderStatusStartTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The start timestamp of the order status.\",\"isNullable\":false,\"name\":\"OrderStatusStartTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderStatusEndTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The end timestamp of the order status.\",\"isNullable\":true,\"name\":\"OrderStatusEndTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderStatus.cdm.json/OrderStatus\",\"name\":\"OrderStatusTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Status Type.\",\"isNullable\":false,\"name\":\"OrderStatusTypeId\"}]}}}",
+			"Description": "The status of the associated Order.",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "OrderId,OrderStatusStartTimestamp",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderStatusStartTimestamp\",\"type\":\"timestamp\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderStatusEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderStatusTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "a06fb46a-8b07-49d6-a7e6-9ceb04eb27e8",
+		"Name": "OrderStatus",
+		"Description": "The status of the associated Order.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

@@ -1,0 +1,28 @@
+{
+	"name": "relationship-lmuditeshz",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "OrderClassification",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "OrderClassificationId",
+				"ToColumnName": "OrderClassificationId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"OrderClassification.cdm.json/OrderClassification\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"OrderClassificationId\",\"toAttribute\":\"OrderClassificationId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "f82021ae-4150-490b-bc7e-84b674944ce5",
+		"Name": "relationship-lmuditeshz",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

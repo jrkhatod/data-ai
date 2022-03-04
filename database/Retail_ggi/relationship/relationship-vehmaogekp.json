@@ -1,0 +1,28 @@
+{
+	"name": "relationship-vehmaogekp",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "PromotionOffer",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "PromotionOfferId",
+				"ToColumnName": "PromotionOfferId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"PromotionOfferId\",\"toAttribute\":\"PromotionOfferId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "29e4dcd2-412c-4cf4-938a-8491e852d286",
+		"Name": "relationship-vehmaogekp",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

@@ -1,0 +1,460 @@
+{
+	"name": "Invoice",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "InvoiceId",
+					"Description": "The unique identifier of an Invoice.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceId"
+					}
+				},
+				{
+					"Name": "CustomerAccountId",
+					"Description": "The unique identifier of a Customer Account.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "CustomerAccountId"
+					}
+				},
+				{
+					"Name": "InvoiceDate",
+					"Description": "The date that the invoice was issued.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceDate"
+					}
+				},
+				{
+					"Name": "InvoiceToName",
+					"Description": "The name of the person invoiced.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceToName"
+					}
+				},
+				{
+					"Name": "InvoiceToPartyId",
+					"Description": "The unique identifier of a Party.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceToPartyId"
+					}
+				},
+				{
+					"Name": "InvoiceToLocationId",
+					"Description": "The unique identifier of a Location.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceToLocationId"
+					}
+				},
+				{
+					"Name": "InvoiceToTelephoneNumber",
+					"Description": "The invoice-to contact telephone number.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 15,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceToTelephoneNumber"
+					}
+				},
+				{
+					"Name": "InvoiceToFaxNumber",
+					"Description": "The invoice-to contact fax number.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 15,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceToFaxNumber"
+					}
+				},
+				{
+					"Name": "InvoiceToEmailAddress",
+					"Description": "The invoice-to contact email address.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 256,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceToEmailAddress"
+					}
+				},
+				{
+					"Name": "InvoiceNote",
+					"Description": "A note, comment or additional information regarding the Invoice.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceNote"
+					}
+				},
+				{
+					"Name": "TotalInvoiceProductAmount",
+					"Description": "The invoice value amount related equal to the (number of unit products) * (unit sale price)",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "TotalInvoiceProductAmount"
+					}
+				},
+				{
+					"Name": "TotalInvoiceChargesAmount",
+					"Description": "The total amount of charges invoiced.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "TotalInvoiceChargesAmount"
+					}
+				},
+				{
+					"Name": "TotalInvoiceAdjustmentsAmount",
+					"Description": "The total amount of adjustments invoiced.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "TotalInvoiceAdjustmentsAmount"
+					}
+				},
+				{
+					"Name": "TotalInvoiceTaxesAmount",
+					"Description": "The total amount of invoiced taxes.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "TotalInvoiceTaxesAmount"
+					}
+				},
+				{
+					"Name": "TotalInvoiceAmount",
+					"Description": "The total amount invoiced.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "TotalInvoiceAmount"
+					}
+				},
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "InvoiceModeId",
+					"Description": "The unique identifier of the Invoice Mode.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceModeId"
+					}
+				},
+				{
+					"Name": "IsoCurrencyCode",
+					"Description": "The ISO 4217 currency code.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 3,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "IsoCurrencyCode"
+					}
+				},
+				{
+					"Name": "InvoiceStatusId",
+					"Description": "The unique identifier of a Invoice Status.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "InvoiceStatusId"
+					}
+				},
+				{
+					"Name": "IsoLanguageId",
+					"Description": "The unique identifier of an ISO Language.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "Invoice.cdm.json/Invoice",
+						"Name": "IsoLanguageId"
+					}
+				}
+			],
+			"ColumnSetEntityName": "87c0618b-1e56-4231-a190-e4227f56a751",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/Invoice",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/Invoice",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"InvoiceId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceId\"},\"CustomerAccountId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"CustomerAccountId\"},\"InvoiceDate\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceDate\"},\"InvoiceToName\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToName\"},\"InvoiceToPartyId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToPartyId\"},\"InvoiceToLocationId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToLocationId\"},\"InvoiceToTelephoneNumber\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToTelephoneNumber\"},\"InvoiceToFaxNumber\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToFaxNumber\"},\"InvoiceToEmailAddress\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToEmailAddress\"},\"InvoiceNote\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceNote\"},\"TotalInvoiceProductAmount\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceProductAmount\"},\"TotalInvoiceChargesAmount\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceChargesAmount\"},\"TotalInvoiceAdjustmentsAmount\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceAdjustmentsAmount\"},\"TotalInvoiceTaxesAmount\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceTaxesAmount\"},\"TotalInvoiceAmount\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceAmount\"},\"OrderId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"OrderId\"},\"InvoiceModeId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceModeId\"},\"IsoCurrencyCode\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"IsoCurrencyCode\"},\"InvoiceStatusId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceStatusId\"},\"IsoLanguageId\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"IsoLanguageId\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"Invoice\",\"path\":\"Invoice.cdm.json/Invoice\"},\"description\":\"A document presented to customers for products delivered or services performed.\",\"primaryKey\":[\"InvoiceId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Invoice.\",\"isNullable\":false,\"name\":\"InvoiceId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"CustomerAccountId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer Account.\",\"isNullable\":true,\"name\":\"CustomerAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the invoice was issued.\",\"isNullable\":true,\"name\":\"InvoiceDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the person invoiced.\",\"isNullable\":true,\"name\":\"InvoiceToName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToPartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":true,\"name\":\"InvoiceToPartyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToLocationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Location.\",\"isNullable\":true,\"name\":\"InvoiceToLocationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToTelephoneNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":15,\"description\":\"The invoice-to contact telephone number.\",\"isNullable\":true,\"scale\":0,\"name\":\"InvoiceToTelephoneNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToFaxNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":15,\"description\":\"The invoice-to contact fax number.\",\"isNullable\":true,\"scale\":0,\"name\":\"InvoiceToFaxNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceToEmailAddress\"},\"dataType\":\"string\",\"dataTypeLength\":256,\"description\":\"The invoice-to contact email address.\",\"isNullable\":true,\"name\":\"InvoiceToEmailAddress\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the Invoice.\",\"isNullable\":true,\"name\":\"InvoiceNote\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceProductAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The invoice value amount related equal to the (number of unit products) * (unit sale price)\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalInvoiceProductAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceChargesAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of charges invoiced.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalInvoiceChargesAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceAdjustmentsAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of adjustments invoiced.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalInvoiceAdjustmentsAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceTaxesAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount of invoiced taxes.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalInvoiceTaxesAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"TotalInvoiceAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The total amount invoiced.\",\"isNullable\":true,\"scale\":2,\"name\":\"TotalInvoiceAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":true,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceModeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of the Invoice Mode.\",\"isNullable\":true,\"name\":\"InvoiceModeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"IsoCurrencyCode\"},\"dataType\":\"string\",\"dataTypeLength\":3,\"description\":\"The ISO 4217 currency code.\",\"isNullable\":true,\"name\":\"IsoCurrencyCode\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"InvoiceStatusId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Invoice Status.\",\"isNullable\":true,\"name\":\"InvoiceStatusId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"Invoice.cdm.json/Invoice\",\"name\":\"IsoLanguageId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an ISO Language.\",\"isNullable\":true,\"name\":\"IsoLanguageId\"}]}}}",
+			"Description": "A document presented to customers for products delivered or services performed.",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "InvoiceId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"InvoiceId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CustomerAccountId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceToName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceToPartyId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceToLocationId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceToTelephoneNumber\",\"type\":\"decimal(15,0)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceToFaxNumber\",\"type\":\"decimal(15,0)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceToEmailAddress\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TotalInvoiceProductAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TotalInvoiceChargesAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TotalInvoiceAdjustmentsAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TotalInvoiceTaxesAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TotalInvoiceAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceModeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"IsoCurrencyCode\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"InvoiceStatusId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"IsoLanguageId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "1c97331e-5b16-48a1-8e60-87cf07a7d068",
+		"Name": "Invoice",
+		"Description": "A document presented to customers for products delivered or services performed.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

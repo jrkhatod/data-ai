@@ -1,0 +1,463 @@
+{
+	"name": "AdvertisingEvent",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "AdvertisingEventId",
+					"Description": "The unique identifier of an Advertising Event.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventId"
+					}
+				},
+				{
+					"Name": "AdvertisingEventDescription",
+					"Description": "The description of the Advertising Event.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventDescription"
+					}
+				},
+				{
+					"Name": "ExecutionStartTimestamp",
+					"Description": "The start timestamp for the execution of the associated Advertising Event.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "ExecutionStartTimestamp"
+					}
+				},
+				{
+					"Name": "ExecutionEndTimestamp",
+					"Description": "The end timestamp for the execution of the associated Advertising Event.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "ExecutionEndTimestamp"
+					}
+				},
+				{
+					"Name": "AdvertisingEventLocation",
+					"Description": "The location of the Advertising Event.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventLocation"
+					}
+				},
+				{
+					"Name": "AdvertisingEventContactWebPage",
+					"Description": "The web page that the advertising event refers viewers to.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 2083,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventContactWebPage"
+					}
+				},
+				{
+					"Name": "AdvertisingEventContactTelephoneNumber",
+					"Description": "The telephone number that the advertising event refers viewers to.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 15,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventContactTelephoneNumber"
+					}
+				},
+				{
+					"Name": "PreemptedReplayStartTimestamp",
+					"Description": "The timestamp of the start of the replay of the advertising event.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "PreemptedReplayStartTimestamp"
+					}
+				},
+				{
+					"Name": "PreemptedReplayEndTimestamp",
+					"Description": "The timestamp of the end of the replay of the advertising event.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "PreemptedReplayEndTimestamp"
+					}
+				},
+				{
+					"Name": "LocalAdvertisingIndicator",
+					"Description": "Commercials marketed to a local sales area and placed by local or regional advertisers.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "LocalAdvertisingIndicator"
+					}
+				},
+				{
+					"Name": "NationalAdvertisingIndicator",
+					"Description": "Indicates that the advertising event is national in scope.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "NationalAdvertisingIndicator"
+					}
+				},
+				{
+					"Name": "AdvertisingEventPreemptedIndicator",
+					"Description": "Indicates that the Advertising Event was preempted.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventPreemptedIndicator"
+					}
+				},
+				{
+					"Name": "AdjacencyAdvertisingEventIndicator",
+					"Description": "Commercials strategically placed next to a feature.",
+					"OriginDataTypeName": {
+						"TypeName": "boolean",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "boolean"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdjacencyAdvertisingEventIndicator"
+					}
+				},
+				{
+					"Name": "AdvertisingCampaignId",
+					"Description": "The unique identifier of an Advertising Campaign.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingCampaignId"
+					}
+				},
+				{
+					"Name": "AdvertisingCategoryId",
+					"Description": "The unique identifier of an Advertising Category.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingCategoryId"
+					}
+				},
+				{
+					"Name": "DeliveryChannelId",
+					"Description": "The unique identifier of a Delivery Channel.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "DeliveryChannelId"
+					}
+				},
+				{
+					"Name": "AgencyId",
+					"Description": "The unique identifier of an Agency.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AgencyId"
+					}
+				},
+				{
+					"Name": "ProductId",
+					"Description": "The unique identifier of a Product.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "ProductId"
+					}
+				},
+				{
+					"Name": "AdvertisingEventTypeId",
+					"Description": "The unique identifier of an advertising event type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "AdvertisingEventTypeId"
+					}
+				},
+				{
+					"Name": "BrandId",
+					"Description": "The unique identifier of a Brand.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "AdvertisingEvent.cdm.json/AdvertisingEvent",
+						"Name": "BrandId"
+					}
+				}
+			],
+			"ColumnSetEntityName": "e3cc9255-ba69-4d8b-9a4e-5f911afe31cc",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/AdvertisingEvent",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/AdvertisingEvent",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"AdvertisingEventId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventId\"},\"AdvertisingEventDescription\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventDescription\"},\"ExecutionStartTimestamp\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"ExecutionStartTimestamp\"},\"ExecutionEndTimestamp\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"ExecutionEndTimestamp\"},\"AdvertisingEventLocation\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventLocation\"},\"AdvertisingEventContactWebPage\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventContactWebPage\"},\"AdvertisingEventContactTelephoneNumber\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventContactTelephoneNumber\"},\"PreemptedReplayStartTimestamp\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"PreemptedReplayStartTimestamp\"},\"PreemptedReplayEndTimestamp\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"PreemptedReplayEndTimestamp\"},\"LocalAdvertisingIndicator\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"LocalAdvertisingIndicator\"},\"NationalAdvertisingIndicator\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"NationalAdvertisingIndicator\"},\"AdvertisingEventPreemptedIndicator\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventPreemptedIndicator\"},\"AdjacencyAdvertisingEventIndicator\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdjacencyAdvertisingEventIndicator\"},\"AdvertisingCampaignId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingCampaignId\"},\"AdvertisingCategoryId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingCategoryId\"},\"DeliveryChannelId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"DeliveryChannelId\"},\"AgencyId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AgencyId\"},\"ProductId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"ProductId\"},\"AdvertisingEventTypeId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventTypeId\"},\"BrandId\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"BrandId\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"AdvertisingEvent\",\"path\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\"},\"description\":\"A specific, discreet execution, performance or placement of a single Advertising Collateral.\\n\\nAn Advertising Campaign may coordinate and affect more than one Advertising Collaterals via multiple Advertising Events.\",\"primaryKey\":[\"AdvertisingEventId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Event.\",\"isNullable\":false,\"name\":\"AdvertisingEventId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512,\"description\":\"The description of the Advertising Event.\",\"isNullable\":true,\"name\":\"AdvertisingEventDescription\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"ExecutionStartTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The start timestamp for the execution of the associated Advertising Event.\",\"isNullable\":true,\"name\":\"ExecutionStartTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"ExecutionEndTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The end timestamp for the execution of the associated Advertising Event.\",\"isNullable\":true,\"name\":\"ExecutionEndTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventLocation\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The location of the Advertising Event.\",\"isNullable\":true,\"name\":\"AdvertisingEventLocation\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventContactWebPage\"},\"dataType\":\"string\",\"dataTypeLength\":2083,\"description\":\"The web page that the advertising event refers viewers to.\",\"isNullable\":true,\"name\":\"AdvertisingEventContactWebPage\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventContactTelephoneNumber\"},\"dataType\":\"decimal\",\"dataTypeLength\":15,\"description\":\"The telephone number that the advertising event refers viewers to.\",\"isNullable\":true,\"scale\":0,\"name\":\"AdvertisingEventContactTelephoneNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"PreemptedReplayStartTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp of the start of the replay of the advertising event.\",\"isNullable\":true,\"name\":\"PreemptedReplayStartTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"PreemptedReplayEndTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp of the end of the replay of the advertising event.\",\"isNullable\":true,\"name\":\"PreemptedReplayEndTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"LocalAdvertisingIndicator\"},\"dataType\":\"boolean\",\"description\":\"Commercials marketed to a local sales area and placed by local or regional advertisers.\",\"isNullable\":true,\"name\":\"LocalAdvertisingIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"NationalAdvertisingIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the advertising event is national in scope.\",\"isNullable\":true,\"name\":\"NationalAdvertisingIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventPreemptedIndicator\"},\"dataType\":\"boolean\",\"description\":\"Indicates that the Advertising Event was preempted.\",\"isNullable\":true,\"name\":\"AdvertisingEventPreemptedIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdjacencyAdvertisingEventIndicator\"},\"dataType\":\"boolean\",\"description\":\"Commercials strategically placed next to a feature.\",\"isNullable\":true,\"name\":\"AdjacencyAdvertisingEventIndicator\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingCampaignId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Campaign.\",\"isNullable\":false,\"name\":\"AdvertisingCampaignId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingCategoryId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Category.\",\"isNullable\":true,\"name\":\"AdvertisingCategoryId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"DeliveryChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Delivery Channel.\",\"isNullable\":true,\"name\":\"DeliveryChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AgencyId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Agency.\",\"isNullable\":true,\"name\":\"AgencyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"ProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Product.\",\"isNullable\":true,\"name\":\"ProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"AdvertisingEventTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an advertising event type.\",\"isNullable\":true,\"name\":\"AdvertisingEventTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"AdvertisingEvent.cdm.json/AdvertisingEvent\",\"name\":\"BrandId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Brand.\",\"isNullable\":true,\"name\":\"BrandId\"}]}}}",
+			"Description": "A specific, discreet execution, performance or placement of a single Advertising Collateral.\n\nAn Advertising Campaign may coordinate and affect more than one Advertising Collaterals via multiple Advertising Events.",
+			"DisplayFolderInfo": "{\"name\":\"Marketing & Advertising\",\"colorCode\":\"#000F5C\"}",
+			"PrimaryKeys": "AdvertisingEventId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"AdvertisingEventId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AdvertisingEventDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ExecutionStartTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ExecutionEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingEventLocation\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingEventContactWebPage\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingEventContactTelephoneNumber\",\"type\":\"decimal(15,0)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PreemptedReplayStartTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PreemptedReplayEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LocalAdvertisingIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"NationalAdvertisingIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingEventPreemptedIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdjacencyAdvertisingEventIndicator\",\"type\":\"boolean\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingCampaignId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AdvertisingCategoryId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DeliveryChannelId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AgencyId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ProductId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingEventTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BrandId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "ac2ccd72-849e-4be5-bfbd-8411a2028e79",
+		"Name": "AdvertisingEvent",
+		"Description": "A specific, discreet execution, performance or placement of a single Advertising Collateral.\n\nAn Advertising Campaign may coordinate and affect more than one Advertising Collaterals via multiple Advertising Events.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

@@ -1,0 +1,575 @@
+{
+	"name": "CommunicationReason",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "CommunicationId",
+					"Description": "The unique identifier of a service request/contact Communication.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CommunicationId"
+					}
+				},
+				{
+					"Name": "CommunicationReasonId",
+					"Description": "The unique identifier of a Communication Reason.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CommunicationReasonId"
+					}
+				},
+				{
+					"Name": "CommunicationReasonNote",
+					"Description": "A note, comment or additional information regarding the communication reason.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CommunicationReasonNote"
+					}
+				},
+				{
+					"Name": "CustomerId",
+					"Description": "The unique identifier of a Customer.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CustomerId"
+					}
+				},
+				{
+					"Name": "CustomerAccountId",
+					"Description": "The unique identifier of a Customer Account.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CustomerAccountId"
+					}
+				},
+				{
+					"Name": "CustomerAccountEventTypeId",
+					"Description": "The unique identifier of a Customer Account Event Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CustomerAccountEventTypeId"
+					}
+				},
+				{
+					"Name": "CustomerAccountEventTimestamp",
+					"Description": "The timestamp of the customer account event.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CustomerAccountEventTimestamp"
+					}
+				},
+				{
+					"Name": "DocumentId",
+					"Description": "The unique identifier of a Document.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "DocumentId"
+					}
+				},
+				{
+					"Name": "MarketingProgramId",
+					"Description": "The unique identifier of a Marketing Program.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "MarketingProgramId"
+					}
+				},
+				{
+					"Name": "ProgramParticipationStatusId",
+					"Description": "The unique identifier of a Program Participation Status.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "ProgramParticipationStatusId"
+					}
+				},
+				{
+					"Name": "CustomerAccountProgramStartDate",
+					"Description": "The start date of the Customer Account's participation in a Program.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "CustomerAccountProgramStartDate"
+					}
+				},
+				{
+					"Name": "TransactionId",
+					"Description": "The unique identifier of a Transaction.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "TransactionId"
+					}
+				},
+				{
+					"Name": "TransactionLineItemId",
+					"Description": "The unique identifier that identifies the Transaction Line Item.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "TransactionLineItemId"
+					}
+				},
+				{
+					"Name": "PaymentId",
+					"Description": "The unique identifier of a Payment.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "PaymentId"
+					}
+				},
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "OrderLineNumber",
+					"Description": "The number that identifies the Order Line Item.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "OrderLineNumber"
+					}
+				},
+				{
+					"Name": "ShipmentId",
+					"Description": "The unique identifier of a Shipment.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "ShipmentId"
+					}
+				},
+				{
+					"Name": "ChannelId",
+					"Description": "The unique identifier of a Channel.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "ChannelId"
+					}
+				},
+				{
+					"Name": "ProductId",
+					"Description": "The unique identifier of a Product.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "ProductId"
+					}
+				},
+				{
+					"Name": "MarketingEventId",
+					"Description": "The unique identifier of a Marketing Event.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "MarketingEventId"
+					}
+				},
+				{
+					"Name": "MarketingCampaignId",
+					"Description": "The unique identifier of a Marketing Campaign.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "MarketingCampaignId"
+					}
+				},
+				{
+					"Name": "AdvertisingEventId",
+					"Description": "The unique identifier of an Advertising Event.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "AdvertisingEventId"
+					}
+				},
+				{
+					"Name": "AdvertisingCampaignId",
+					"Description": "The unique identifier of an Advertising Campaign.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "AdvertisingCampaignId"
+					}
+				},
+				{
+					"Name": "OrganizationId",
+					"Description": "The unique identifier of an organization.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "OrganizationId"
+					}
+				},
+				{
+					"Name": "BusinessProcessId",
+					"Description": "The unique identifier of a Business Process.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "BusinessProcessId"
+					}
+				},
+				{
+					"Name": "PartyId",
+					"Description": "The unique identifier of a Party.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "CommunicationReason.cdm.json/CommunicationReason",
+						"Name": "PartyId"
+					}
+				}
+			],
+			"ColumnSetEntityName": "6f7720a7-6930-43db-9e57-8fadaf4e8108",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/CommunicationReason",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/CommunicationReason",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"CommunicationId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CommunicationId\"},\"CommunicationReasonId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CommunicationReasonId\"},\"CommunicationReasonNote\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CommunicationReasonNote\"},\"CustomerId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerId\"},\"CustomerAccountId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountId\"},\"CustomerAccountEventTypeId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountEventTypeId\"},\"CustomerAccountEventTimestamp\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountEventTimestamp\"},\"DocumentId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"DocumentId\"},\"MarketingProgramId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"MarketingProgramId\"},\"ProgramParticipationStatusId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ProgramParticipationStatusId\"},\"CustomerAccountProgramStartDate\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountProgramStartDate\"},\"TransactionId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"TransactionId\"},\"TransactionLineItemId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"TransactionLineItemId\"},\"PaymentId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"PaymentId\"},\"OrderId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"OrderId\"},\"OrderLineNumber\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"OrderLineNumber\"},\"ShipmentId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ShipmentId\"},\"ChannelId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ChannelId\"},\"ProductId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ProductId\"},\"MarketingEventId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"MarketingEventId\"},\"MarketingCampaignId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"MarketingCampaignId\"},\"AdvertisingEventId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"AdvertisingEventId\"},\"AdvertisingCampaignId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"AdvertisingCampaignId\"},\"OrganizationId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"OrganizationId\"},\"BusinessProcessId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"BusinessProcessId\"},\"PartyId\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"PartyId\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"CommunicationReason\",\"path\":\"CommunicationReason.cdm.json/CommunicationReason\"},\"description\":\"A reason for the communication.\",\"primaryKey\":[\"CommunicationId\",\"CommunicationReasonId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CommunicationId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a service request/contact Communication.\",\"isNullable\":false,\"name\":\"CommunicationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CommunicationReasonId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Communication Reason.\",\"isNullable\":false,\"name\":\"CommunicationReasonId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CommunicationReasonNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the communication reason.\",\"isNullable\":true,\"name\":\"CommunicationReasonNote\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer.\",\"isNullable\":true,\"name\":\"CustomerId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer Account.\",\"isNullable\":true,\"name\":\"CustomerAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountEventTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Customer Account Event Type.\",\"isNullable\":true,\"name\":\"CustomerAccountEventTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountEventTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The timestamp of the customer account event.\",\"isNullable\":true,\"name\":\"CustomerAccountEventTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"DocumentId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Document.\",\"isNullable\":true,\"name\":\"DocumentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"MarketingProgramId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Marketing Program.\",\"isNullable\":true,\"name\":\"MarketingProgramId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ProgramParticipationStatusId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Program Participation Status.\",\"isNullable\":true,\"name\":\"ProgramParticipationStatusId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"CustomerAccountProgramStartDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The start date of the Customer Account's participation in a Program.\",\"isNullable\":true,\"name\":\"CustomerAccountProgramStartDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"TransactionId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Transaction.\",\"isNullable\":true,\"name\":\"TransactionId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"TransactionLineItemId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier that identifies the Transaction Line Item.\",\"isNullable\":true,\"name\":\"TransactionLineItemId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"PaymentId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Payment.\",\"isNullable\":true,\"name\":\"PaymentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":true,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"OrderLineNumber\"},\"dataType\":\"integer\",\"description\":\"The number that identifies the Order Line Item.\",\"isNullable\":true,\"name\":\"OrderLineNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ShipmentId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Shipment.\",\"isNullable\":true,\"name\":\"ShipmentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ChannelId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Channel.\",\"isNullable\":true,\"name\":\"ChannelId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"ProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Product.\",\"isNullable\":true,\"name\":\"ProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"MarketingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Marketing Event.\",\"isNullable\":true,\"name\":\"MarketingEventId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"MarketingCampaignId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Marketing Campaign.\",\"isNullable\":true,\"name\":\"MarketingCampaignId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"AdvertisingEventId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Event.\",\"isNullable\":true,\"name\":\"AdvertisingEventId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"AdvertisingCampaignId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Advertising Campaign.\",\"isNullable\":true,\"name\":\"AdvertisingCampaignId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"OrganizationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an organization.\",\"isNullable\":true,\"name\":\"OrganizationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"BusinessProcessId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Business Process.\",\"isNullable\":true,\"name\":\"BusinessProcessId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"CommunicationReason.cdm.json/CommunicationReason\",\"name\":\"PartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":true,\"name\":\"PartyId\"}]}}}",
+			"Description": "A reason for the communication.",
+			"DisplayFolderInfo": "{\"name\":\"Customer Service & Contact Management\",\"colorCode\":\"#502006\"}",
+			"PrimaryKeys": "CommunicationId,CommunicationReasonId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"CommunicationId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CommunicationReasonId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"CommunicationReasonNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CustomerId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CustomerAccountId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CustomerAccountEventTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CustomerAccountEventTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"DocumentId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"MarketingProgramId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ProgramParticipationStatusId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CustomerAccountProgramStartDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TransactionId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"TransactionLineItemId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PaymentId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderLineNumber\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ShipmentId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ChannelId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ProductId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"MarketingEventId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"MarketingCampaignId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingEventId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"AdvertisingCampaignId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrganizationId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"BusinessProcessId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PartyId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "c825b491-9e73-4130-97e2-0b01c0c3e1ef",
+		"Name": "CommunicationReason",
+		"Description": "A reason for the communication.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

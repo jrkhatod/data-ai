@@ -1,0 +1,32 @@
+{
+	"name": "relationship-vdhogsgqda",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "SoftwareProductVersion",
+		"ToTableName": "CommunicationDevice",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "SoftwareProductId",
+				"ToColumnName": "SoftwareProductId"
+			},
+			{
+				"FromColumnName": "SoftwareProductVersionNumber",
+				"ToColumnName": "SoftwareProductVersionNumber"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"toEntity\":\"CommunicationDevice.cdm.json/CommunicationDevice\",\"joinPairs\":[{\"fromAttribute\":\"SoftwareProductId\",\"toAttribute\":\"SoftwareProductId\"},{\"fromAttribute\":\"SoftwareProductVersionNumber\",\"toAttribute\":\"SoftwareProductVersionNumber\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "99b94a7b-b411-41d8-bd51-cd9bff434842",
+		"Name": "relationship-vdhogsgqda",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

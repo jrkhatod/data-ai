@@ -1,0 +1,28 @@
+{
+	"name": "relationship-xvbonqngoq",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "PromotionOffer",
+		"ToTableName": "OrderLine",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "PromotionOfferId",
+				"ToColumnName": "PromotionOfferId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"toEntity\":\"OrderLine.cdm.json/OrderLine\",\"joinPairs\":[{\"fromAttribute\":\"PromotionOfferId\",\"toAttribute\":\"PromotionOfferId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "eacb2115-cd35-4d37-99f5-7a2006db4ae4",
+		"Name": "relationship-xvbonqngoq",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

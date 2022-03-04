@@ -1,0 +1,28 @@
+{
+	"name": "relationship-uenpsedjnh",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "SalesMethod",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "SalesMethodId",
+				"ToColumnName": "SalesMethodId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"SalesMethod.cdm.json/SalesMethod\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"SalesMethodId\",\"toAttribute\":\"SalesMethodId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "fed12d7f-c17b-453b-896d-3293fcfe1d17",
+		"Name": "relationship-uenpsedjnh",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

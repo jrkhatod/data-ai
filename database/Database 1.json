@@ -1,0 +1,25 @@
+{
+	"name": "Database 1",
+	"properties": {
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Database 1",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "b1dde034-c39f-4cb7-b4bc-2c4368df3664",
+		"Name": "Database 1",
+		"EntityType": "DATABASE"
+	},
+	"type": "DATABASE"
+}

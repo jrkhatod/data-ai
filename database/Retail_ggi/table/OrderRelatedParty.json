@@ -1,0 +1,155 @@
+{
+	"name": "OrderRelatedParty",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderRelatedParty.cdm.json/OrderRelatedParty",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "PartyId",
+					"Description": "The unique identifier of a Party.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderRelatedParty.cdm.json/OrderRelatedParty",
+						"Name": "PartyId"
+					}
+				},
+				{
+					"Name": "OrderPartyRelationshipTypeId",
+					"Description": "The unique identifier of an Order Party Relationship Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderRelatedParty.cdm.json/OrderRelatedParty",
+						"Name": "OrderPartyRelationshipTypeId"
+					}
+				},
+				{
+					"Name": "OrderRelatedPartyNote",
+					"Description": "A note, comment or additional information regarding the order party relationship.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderRelatedParty.cdm.json/OrderRelatedParty",
+						"Name": "OrderRelatedPartyNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "ba2fd3be-a781-4e46-ae8f-60a2f63b839b",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderRelatedParty",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderRelatedParty",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"OrderId\"},\"PartyId\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"PartyId\"},\"OrderPartyRelationshipTypeId\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"OrderPartyRelationshipTypeId\"},\"OrderRelatedPartyNote\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"OrderRelatedPartyNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"OrderRelatedParty\",\"path\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\"},\"description\":\"The relation of a party to an order.\",\"primaryKey\":[\"OrderId\",\"PartyId\",\"OrderPartyRelationshipTypeId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"PartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party.\",\"isNullable\":false,\"name\":\"PartyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"OrderPartyRelationshipTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Party Relationship Type.\",\"isNullable\":false,\"name\":\"OrderPartyRelationshipTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderRelatedParty.cdm.json/OrderRelatedParty\",\"name\":\"OrderRelatedPartyNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the order party relationship.\",\"isNullable\":true,\"name\":\"OrderRelatedPartyNote\"}]}}}",
+			"Description": "The relation of a party to an order.",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "OrderId,PartyId,OrderPartyRelationshipTypeId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PartyId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderPartyRelationshipTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderRelatedPartyNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "21dead76-dd90-412a-a8b9-d6c1587591ab",
+		"Name": "OrderRelatedParty",
+		"Description": "The relation of a party to an order.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

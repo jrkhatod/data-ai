@@ -1,0 +1,32 @@
+{
+	"name": "relationship-whwesjfteu",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "SoftwareProductVersion",
+		"ToTableName": "Transaction",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "SoftwareProductId",
+				"ToColumnName": "SoftwareProductId"
+			},
+			{
+				"FromColumnName": "SoftwareProductVersionNumber",
+				"ToColumnName": "SoftwareProductVersionNumber"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"toEntity\":\"Transaction.cdm.json/Transaction\",\"joinPairs\":[{\"fromAttribute\":\"SoftwareProductId\",\"toAttribute\":\"SoftwareProductId\"},{\"fromAttribute\":\"SoftwareProductVersionNumber\",\"toAttribute\":\"SoftwareProductVersionNumber\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "155e7fc7-6648-450a-8557-8d8f91c86e73",
+		"Name": "relationship-whwesjfteu",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

@@ -1,0 +1,233 @@
+{
+	"name": "PromotionOffer",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "PromotionOfferId",
+					"Description": "The unique identifier of a Promotion Offer. The Promotion Offer ID is unique to each account or party that is offered to.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "PromotionOfferId"
+					}
+				},
+				{
+					"Name": "PromotionId",
+					"Description": "The unique identifier of a Promotion.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "PromotionId"
+					}
+				},
+				{
+					"Name": "PromotionOfferValidStartTimestamp",
+					"Description": "The period start timestamp that the offer is valid or effective as-of.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "PromotionOfferValidStartTimestamp"
+					}
+				},
+				{
+					"Name": "PromotionOfferValidEndTimestamp",
+					"Description": "The period end timestamp that the offer is valid or effective as-of.",
+					"OriginDataTypeName": {
+						"TypeName": "timestamp",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"TimestampFormat": "YYYY-MM-DD HH:MM:SS.fffffffff",
+							"HIVE_TYPE_STRING": "timestamp"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "PromotionOfferValidEndTimestamp"
+					}
+				},
+				{
+					"Name": "PromotionOfferDescription",
+					"Description": "A description of the offer.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "PromotionOfferDescription"
+					}
+				},
+				{
+					"Name": "LoyaltyProgramId",
+					"Description": "The unique identifier of a Loyalty Program.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "LoyaltyProgramId"
+					}
+				},
+				{
+					"Name": "LoyaltyAccountId",
+					"Description": "The unique identifier of a Loyalty Account.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "LoyaltyAccountId"
+					}
+				},
+				{
+					"Name": "CustomerId",
+					"Description": "The unique identifier of a Customer.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "PromotionOffer.cdm.json/PromotionOffer",
+						"Name": "CustomerId"
+					}
+				}
+			],
+			"ColumnSetEntityName": "2c69965f-de6f-4c32-ae86-76b57972b5e7",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/PromotionOffer",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/PromotionOffer",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"PromotionOfferId\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferId\"},\"PromotionId\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionId\"},\"PromotionOfferValidStartTimestamp\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferValidStartTimestamp\"},\"PromotionOfferValidEndTimestamp\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferValidEndTimestamp\"},\"PromotionOfferDescription\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferDescription\"},\"LoyaltyProgramId\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"LoyaltyProgramId\"},\"LoyaltyAccountId\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"LoyaltyAccountId\"},\"CustomerId\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"CustomerId\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"PromotionOffer\",\"path\":\"PromotionOffer.cdm.json/PromotionOffer\"},\"description\":\"An offer that is associated with a promotion.\",\"primaryKey\":[\"PromotionOfferId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Promotion Offer. The Promotion Offer ID is unique to each account or party that is offered to.\",\"isNullable\":false,\"name\":\"PromotionOfferId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Promotion.\",\"isNullable\":true,\"name\":\"PromotionId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferValidStartTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The period start timestamp that the offer is valid or effective as-of.\",\"isNullable\":true,\"name\":\"PromotionOfferValidStartTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferValidEndTimestamp\"},\"dataType\":\"timestamp\",\"description\":\"The period end timestamp that the offer is valid or effective as-of.\",\"isNullable\":true,\"name\":\"PromotionOfferValidEndTimestamp\",\"timestampFormat\":\"YYYY-MM-DD HH:MM:SS.fffffffff\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"PromotionOfferDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512,\"description\":\"A description of the offer.\",\"isNullable\":true,\"name\":\"PromotionOfferDescription\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"LoyaltyProgramId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Loyalty Program.\",\"isNullable\":true,\"name\":\"LoyaltyProgramId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"LoyaltyAccountId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Loyalty Account.\",\"isNullable\":true,\"name\":\"LoyaltyAccountId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"PromotionOffer.cdm.json/PromotionOffer\",\"name\":\"CustomerId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Customer.\",\"isNullable\":true,\"name\":\"CustomerId\"}]}}}",
+			"Description": "An offer that is associated with a promotion.",
+			"DisplayFolderInfo": "{\"name\":\"Marketing & Advertising\",\"colorCode\":\"#000F5C\"}",
+			"PrimaryKeys": "PromotionOfferId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"PromotionOfferId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"PromotionId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PromotionOfferValidStartTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PromotionOfferValidEndTimestamp\",\"type\":\"timestamp\",\"nullable\":true,\"metadata\":{}},{\"name\":\"PromotionOfferDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LoyaltyProgramId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"LoyaltyAccountId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"CustomerId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "b4989b45-f3d1-4579-ab11-16bf30cfcc2a",
+		"Name": "PromotionOffer",
+		"Description": "An offer that is associated with a promotion.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

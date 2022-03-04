@@ -1,0 +1,155 @@
+{
+	"name": "OrderAdjustment",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderAdjustment.cdm.json/OrderAdjustment",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "AdjustmentId",
+					"Description": "The unique identifier of an Adjustment.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderAdjustment.cdm.json/OrderAdjustment",
+						"Name": "AdjustmentId"
+					}
+				},
+				{
+					"Name": "OrderAdjustmentAmount",
+					"Description": "The amount of the order adjustment.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderAdjustment.cdm.json/OrderAdjustment",
+						"Name": "OrderAdjustmentAmount"
+					}
+				},
+				{
+					"Name": "OrderAdjustmentNote",
+					"Description": "A note, comment or additional information regarding an Order Adjustment.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderAdjustment.cdm.json/OrderAdjustment",
+						"Name": "OrderAdjustmentNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "9498c67e-22c6-48aa-912f-737eeb9a4202",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderAdjustment",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderAdjustment",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"OrderId\"},\"AdjustmentId\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"AdjustmentId\"},\"OrderAdjustmentAmount\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"OrderAdjustmentAmount\"},\"OrderAdjustmentNote\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"OrderAdjustmentNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"OrderAdjustment\",\"path\":\"OrderAdjustment.cdm.json/OrderAdjustment\"},\"description\":\"An adjustment applied to an Order.\",\"primaryKey\":[\"OrderId\",\"AdjustmentId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"AdjustmentId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Adjustment.\",\"isNullable\":false,\"name\":\"AdjustmentId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"OrderAdjustmentAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The amount of the order adjustment.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderAdjustmentAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderAdjustment.cdm.json/OrderAdjustment\",\"name\":\"OrderAdjustmentNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding an Order Adjustment.\",\"isNullable\":true,\"name\":\"OrderAdjustmentNote\"}]}}}",
+			"Description": "An adjustment applied to an Order.",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "OrderId,AdjustmentId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"AdjustmentId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderAdjustmentAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderAdjustmentNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "2126465a-da49-48b7-b902-06587f7716fe",
+		"Name": "OrderAdjustment",
+		"Description": "An adjustment applied to an Order.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

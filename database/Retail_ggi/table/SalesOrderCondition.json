@@ -1,0 +1,136 @@
+{
+	"name": "SalesOrderCondition",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SalesOrderCondition.cdm.json/SalesOrderCondition",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "OrderConditionId",
+					"Description": "The unique identifier of an Order Condition.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SalesOrderCondition.cdm.json/SalesOrderCondition",
+						"Name": "OrderConditionId"
+					}
+				},
+				{
+					"Name": "SalesOrderConditionNote",
+					"Description": "A note, comment or additional information regarding the Sales Order Condition.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SalesOrderCondition.cdm.json/SalesOrderCondition",
+						"Name": "SalesOrderConditionNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "77d81e00-bc25-4716-a481-339f17f52e6f",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/SalesOrderCondition",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/SalesOrderCondition",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\",\"name\":\"OrderId\"},\"OrderConditionId\":{\"entity\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\",\"name\":\"OrderConditionId\"},\"SalesOrderConditionNote\":{\"entity\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\",\"name\":\"SalesOrderConditionNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"SalesOrderCondition\",\"path\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\"},\"description\":\"The one or more Order Condition(s) applied to the Order.\",\"primaryKey\":[\"OrderId\",\"OrderConditionId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\",\"name\":\"OrderConditionId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Condition.\",\"isNullable\":false,\"name\":\"OrderConditionId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SalesOrderCondition.cdm.json/SalesOrderCondition\",\"name\":\"SalesOrderConditionNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the Sales Order Condition.\",\"isNullable\":true,\"name\":\"SalesOrderConditionNote\"}]}}}",
+			"Description": "The one or more Order Condition(s) applied to the Order.",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "OrderId,OrderConditionId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderConditionId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SalesOrderConditionNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "40cb5a93-c323-46f4-a13a-4d6a8a73fc1c",
+		"Name": "SalesOrderCondition",
+		"Description": "The one or more Order Condition(s) applied to the Order.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

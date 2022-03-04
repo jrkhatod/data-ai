@@ -1,0 +1,174 @@
+{
+	"name": "OrderCharge",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "OrderId",
+					"Description": "The unique number that identifies an Order.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderCharge.cdm.json/OrderCharge",
+						"Name": "OrderId"
+					}
+				},
+				{
+					"Name": "OrderChargeTypeId",
+					"Description": "The unique identifier of an Order Charge Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderCharge.cdm.json/OrderCharge",
+						"Name": "OrderChargeTypeId"
+					}
+				},
+				{
+					"Name": "OrderChargeAmount",
+					"Description": "The amount of the charge.",
+					"OriginDataTypeName": {
+						"TypeName": "decimal",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 18,
+						"Scale": 2,
+						"Properties": {
+							"HIVE_TYPE_STRING": "decimal"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderCharge.cdm.json/OrderCharge",
+						"Name": "OrderChargeAmount"
+					}
+				},
+				{
+					"Name": "ChargeByPartyId",
+					"Description": "The unique identifier of a Party due the charge.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderCharge.cdm.json/OrderCharge",
+						"Name": "ChargeByPartyId"
+					}
+				},
+				{
+					"Name": "OrderChargeNote",
+					"Description": "A note, comment or additional information regarding the order charge.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderCharge.cdm.json/OrderCharge",
+						"Name": "OrderChargeNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "8ead201c-54eb-4b83-8bc6-cc5d358b80d6",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderCharge",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderCharge",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderId\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderId\"},\"OrderChargeTypeId\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderChargeTypeId\"},\"OrderChargeAmount\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderChargeAmount\"},\"ChargeByPartyId\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"ChargeByPartyId\"},\"OrderChargeNote\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderChargeNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"OrderCharge\",\"path\":\"OrderCharge.cdm.json/OrderCharge\"},\"description\":\"A charge against the order.\",\"primaryKey\":[\"OrderId\",\"OrderChargeTypeId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderId\"},\"dataType\":\"long\",\"description\":\"The unique number that identifies an Order.\",\"isNullable\":false,\"name\":\"OrderId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderChargeTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Charge Type.\",\"isNullable\":false,\"name\":\"OrderChargeTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderChargeAmount\"},\"dataType\":\"decimal\",\"dataTypeLength\":18,\"description\":\"The amount of the charge.\",\"isNullable\":true,\"scale\":2,\"name\":\"OrderChargeAmount\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"ChargeByPartyId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a Party due the charge.\",\"isNullable\":true,\"name\":\"ChargeByPartyId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderCharge.cdm.json/OrderCharge\",\"name\":\"OrderChargeNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the order charge.\",\"isNullable\":true,\"name\":\"OrderChargeNote\"}]}}}",
+			"Description": "A charge against the order.",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "OrderId,OrderChargeTypeId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"OrderId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderChargeTypeId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderChargeAmount\",\"type\":\"decimal(18,2)\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ChargeByPartyId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderChargeNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "a0df1556-df8f-4a5e-b17e-808e7884ae1f",
+		"Name": "OrderCharge",
+		"Description": "A charge against the order.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

@@ -1,0 +1,136 @@
+{
+	"name": "OrderClassification",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "OrderClassificationId",
+					"Description": "The unique identifier of an Order Classification.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderClassification.cdm.json/OrderClassification",
+						"Name": "OrderClassificationId"
+					}
+				},
+				{
+					"Name": "OrderClassificationName",
+					"Description": "The name of an Order Classification.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderClassification.cdm.json/OrderClassification",
+						"Name": "OrderClassificationName"
+					}
+				},
+				{
+					"Name": "OrderClassificationDescription",
+					"Description": "The description of an Order Classification.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "OrderClassification.cdm.json/OrderClassification",
+						"Name": "OrderClassificationDescription"
+					}
+				}
+			],
+			"ColumnSetEntityName": "adc162e3-959f-49af-a826-bb7575bf752d",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderClassification",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/OrderClassification",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"OrderClassificationId\":{\"entity\":\"OrderClassification.cdm.json/OrderClassification\",\"name\":\"OrderClassificationId\"},\"OrderClassificationName\":{\"entity\":\"OrderClassification.cdm.json/OrderClassification\",\"name\":\"OrderClassificationName\"},\"OrderClassificationDescription\":{\"entity\":\"OrderClassification.cdm.json/OrderClassification\",\"name\":\"OrderClassificationDescription\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"OrderClassification\",\"path\":\"OrderClassification.cdm.json/OrderClassification\"},\"description\":\"A classification of orders based on common characteristics.\\n\\nEx:\\n- Internal Order\\n- External Order\\n- Work Order\",\"primaryKey\":[\"OrderClassificationId\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderClassification.cdm.json/OrderClassification\",\"name\":\"OrderClassificationId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of an Order Classification.\",\"isNullable\":false,\"name\":\"OrderClassificationId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderClassification.cdm.json/OrderClassification\",\"name\":\"OrderClassificationName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of an Order Classification.\",\"isNullable\":true,\"name\":\"OrderClassificationName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"OrderClassification.cdm.json/OrderClassification\",\"name\":\"OrderClassificationDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512,\"description\":\"The description of an Order Classification.\",\"isNullable\":true,\"name\":\"OrderClassificationDescription\"}]}}}",
+			"Description": "A classification of orders based on common characteristics.\n\nEx:\n- Internal Order\n- External Order\n- Work Order",
+			"DisplayFolderInfo": "{\"name\":\"Order\",\"colorCode\":\"#7062A8\"}",
+			"PrimaryKeys": "OrderClassificationId",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"OrderClassificationId\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"OrderClassificationName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"OrderClassificationDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "5e09c8bc-c2cf-49b0-af91-f76011170e8e",
+		"Name": "OrderClassification",
+		"Description": "A classification of orders based on common characteristics.\n\nEx:\n- Internal Order\n- External Order\n- Work Order",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}

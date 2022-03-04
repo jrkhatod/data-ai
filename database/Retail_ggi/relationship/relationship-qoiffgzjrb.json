@@ -1,0 +1,28 @@
+{
+	"name": "relationship-qoiffgzjrb",
+	"properties": {
+		"Namespace": {
+			"DatabaseName": "Retail_ggi"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "OrderProcessingStatus",
+		"ToTableName": "Order",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "OrderProcessingStatusId",
+				"ToColumnName": "OrderProcessingStatusId"
+			}
+		],
+		"Properties": {
+			"DerivedModelRelationshipInfo": "{\"baseRelationship\":{\"fromEntity\":\"OrderProcessingStatus.cdm.json/OrderProcessingStatus\",\"toEntity\":\"Order.cdm.json/Order\",\"joinPairs\":[{\"fromAttribute\":\"OrderProcessingStatusId\",\"toAttribute\":\"OrderProcessingStatusId\"}]}}"
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "4e0f5361-9061-4588-8554-82ea11c9f802",
+		"Name": "relationship-qoiffgzjrb",
+		"EntityType": "RELATIONSHIP"
+	},
+	"type": "RELATIONSHIP"
+}

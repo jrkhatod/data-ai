@@ -1,0 +1,233 @@
+{
+	"name": "SoftwareProductVersion",
+	"properties": {
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "Retail_ggi"
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "SoftwareProductId",
+					"Description": "The unique identifier of a software product.",
+					"OriginDataTypeName": {
+						"TypeName": "long",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "long"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductId"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionNumber",
+					"Description": "The version number of the software product.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": false,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductVersionNumber"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionName",
+					"Description": "The name of the software product version - such as a code name for the software product version.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 128,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductVersionName"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionDescription",
+					"Description": "A description of the software product version.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 512,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductVersionDescription"
+					}
+				},
+				{
+					"Name": "ProtocolTypeId",
+					"Description": "The unique identifier of a Protocol Type.",
+					"OriginDataTypeName": {
+						"TypeName": "integer",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "integer"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "ProtocolTypeId"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionFirstAvailableDate",
+					"Description": "The date that the software product version is first available.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductVersionFirstAvailableDate"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionSupportExpiryDate",
+					"Description": "The date that the Software Product version is last supported.",
+					"OriginDataTypeName": {
+						"TypeName": "date",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"DateFormat": "YYYY-MM-DD",
+							"HIVE_TYPE_STRING": "date"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductVersionSupportExpiryDate"
+					}
+				},
+				{
+					"Name": "SoftwareProductVersionNote",
+					"Description": "A note, comment or additional information regarding the software product version.",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 1024,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"BaseAttributeReference": {
+						"Entity": "SoftwareProductVersion.cdm.json/SoftwareProductVersion",
+						"Name": "SoftwareProductVersionNote"
+					}
+				}
+			],
+			"ColumnSetEntityName": "9239ae2a-1f77-4474-bf97-b04ea2aec2c2",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "csv",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/SoftwareProductVersion",
+					"delimiter": ",",
+					"firstRowAsHeader": "false",
+					"multiLine": "false",
+					"serialization.format": "1",
+					"escape": "\\",
+					"quote": "\"",
+					"FormatTypeSetToDatabaseDefault": true,
+					"header": "false"
+				}
+			},
+			"Source": {
+				"Provider": "ADLS",
+				"Location": "abfss://dir@demosajk1221.dfs.core.windows.net/Retail_ggi/SoftwareProductVersion",
+				"Properties": {
+					"LinkedServiceName": "demosynapsews1221-WorkspaceDefaultStorage",
+					"LocationSetToDatabaseDefault": true
+				}
+			},
+			"Properties": {
+				"textinputformat.record.delimiter": ",",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{\"SoftwareProductId\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductId\"},\"SoftwareProductVersionNumber\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionNumber\"},\"SoftwareProductVersionName\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionName\"},\"SoftwareProductVersionDescription\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionDescription\"},\"ProtocolTypeId\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"ProtocolTypeId\"},\"SoftwareProductVersionFirstAvailableDate\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionFirstAvailableDate\"},\"SoftwareProductVersionSupportExpiryDate\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionSupportExpiryDate\"},\"SoftwareProductVersionNote\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionNote\"}}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": null,
+		"CreateTime": 0,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"DerivedModelEntityInfo": "{\"entityDirectives\":{\"baseEntityReference\":{\"name\":\"SoftwareProductVersion\",\"path\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\"},\"description\":\"A version of a software product.\",\"primaryKey\":[\"SoftwareProductId\",\"SoftwareProductVersionNumber\"],\"projectionInfo\":{\"attributes\":[{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductId\"},\"dataType\":\"long\",\"description\":\"The unique identifier of a software product.\",\"isNullable\":false,\"name\":\"SoftwareProductId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionNumber\"},\"dataType\":\"integer\",\"description\":\"The version number of the software product.\",\"isNullable\":false,\"name\":\"SoftwareProductVersionNumber\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionName\"},\"dataType\":\"string\",\"dataTypeLength\":128,\"description\":\"The name of the software product version - such as a code name for the software product version.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionName\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionDescription\"},\"dataType\":\"string\",\"dataTypeLength\":512,\"description\":\"A description of the software product version.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionDescription\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"ProtocolTypeId\"},\"dataType\":\"integer\",\"description\":\"The unique identifier of a Protocol Type.\",\"isNullable\":true,\"name\":\"ProtocolTypeId\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionFirstAvailableDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the software product version is first available.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionFirstAvailableDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionSupportExpiryDate\"},\"dataType\":\"date\",\"dateFormat\":\"YYYY-MM-DD\",\"description\":\"The date that the Software Product version is last supported.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionSupportExpiryDate\"},{\"type\":\"Existing\",\"attributeReference\":{\"entity\":\"SoftwareProductVersion.cdm.json/SoftwareProductVersion\",\"name\":\"SoftwareProductVersionNote\"},\"dataType\":\"string\",\"dataTypeLength\":1024,\"description\":\"A note, comment or additional information regarding the software product version.\",\"isNullable\":true,\"name\":\"SoftwareProductVersionNote\"}]}}}",
+			"Description": "A version of a software product.",
+			"DisplayFolderInfo": "{\"name\":\"Transaction\",\"colorCode\":\"#F775C5\"}",
+			"PrimaryKeys": "SoftwareProductId,SoftwareProductVersionNumber",
+			"spark.sql.sources.provider": "csv",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate",
+			"spark.sql.sources.schema.numParts": "1",
+			"spark.sql.sources.schema.part.0": "{\"type\":\"struct\",\"fields\":[{\"name\":\"SoftwareProductId\",\"type\":\"long\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SoftwareProductVersionNumber\",\"type\":\"integer\",\"nullable\":false,\"metadata\":{}},{\"name\":\"SoftwareProductVersionName\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SoftwareProductVersionDescription\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"ProtocolTypeId\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SoftwareProductVersionFirstAvailableDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SoftwareProductVersionSupportExpiryDate\",\"type\":\"date\",\"nullable\":true,\"metadata\":{}},{\"name\":\"SoftwareProductVersionNote\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}"
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "d56067b3-d977-4e9a-b1bc-12e388fc93d3",
+		"Name": "SoftwareProductVersion",
+		"Description": "A version of a software product.",
+		"EntityType": "TABLE"
+	},
+	"type": "TABLE"
+}
